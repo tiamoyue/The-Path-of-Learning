@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title> how are you </title>
-    <url>/2020/06/04/how-are-you/</url>
-    <content><![CDATA[]]></content>
+    <title>Post that try to keep my website running</title>
+    <url>/2020/06/02/posttry-to-keep-my-website-runing/</url>
+    <content><![CDATA[<p>I still figure out how to make my website more succint and beautiful. Since I am not a front-end developer, itis quite a hard thing for me. </p>
+]]></content>
   </entry>
   <entry>
     <title>My second post to test</title>
@@ -20,9 +21,8 @@
       </tags>
   </entry>
   <entry>
-    <title>Post that try to keep my website running</title>
-    <url>/2020/06/02/posttry-to-keep-my-website-runing/</url>
-    <content><![CDATA[<p>I still figure out how to make my website more succint and beautiful. Since I am not a front-end developer, itis quite a hard thing for me. </p>
-]]></content>
+    <title> how are you </title>
+    <url>/2020/06/04/how-are-you/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
