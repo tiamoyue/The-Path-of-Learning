@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tiamoyue.github.io/"/>
-  <updated>2020-06-04T01:24:26.413Z</updated>
+  <updated>2020-06-04T17:04:37.665Z</updated>
   <id>https://tiamoyue.github.io/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title> how are you </title>
+    <link href="https://tiamoyue.github.io/2020/06/04/how-are-you/"/>
+    <id>https://tiamoyue.github.io/2020/06/04/how-are-you/</id>
+    <published>2020-06-04T17:04:37.000Z</published>
+    <updated>2020-06-04T17:04:37.665Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>My second post to test</title>
+    <link href="https://tiamoyue.github.io/2020/06/04/My-second-post-to-test/"/>
+    <id>https://tiamoyue.github.io/2020/06/04/My-second-post-to-test/</id>
+    <published>2020-06-04T07:24:02.000Z</published>
+    <updated>2020-06-04T17:11:02.160Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;如何过云朵是天空的一封信， 能不能听一听，再听一听你的声音， 就当时探秘， 天空突然放晴。！！如果我说爱你就是这样，我无法答应你，因为就连我自己都不知道我的未来在哪里.&lt;/p&gt;
+&lt;p&gt;catergroies: feeling&lt;/p&gt;
+&lt;p&gt;tags:
+        
+      
+    
+    </summary>
+    
+    
+      <category term="test" scheme="https://tiamoyue.github.io/categories/test/"/>
+    
+    
+      <category term="front-end" scheme="https://tiamoyue.github.io/tags/front-end/"/>
+    
+  </entry>
   
   <entry>
     <title>Post that try to keep my website running</title>
