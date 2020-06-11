@@ -20,9 +20,25 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Post that try to keep my website running</title>
+    <title>KPMG Vitrual Internship Notes</title>
     <url>/2020/06/02/posttry-to-keep-my-website-runing/</url>
-    <content><![CDATA[<p>I still figure out how to make my website more succint and beautiful. Since I am not a front-end developer, itis quite a hard thing for me. </p>
+    <content><![CDATA[<h3 id="Task-1-Identifying-the-data-quality-issues-and-how-this-may-impact-our-analysis-going-forward"><a href="#Task-1-Identifying-the-data-quality-issues-and-how-this-may-impact-our-analysis-going-forward" class="headerlink" title="Task 1: Identifying the data quality issues and how this may impact our analysis going forward?"></a>Task 1: Identifying the data quality issues and how this may impact our analysis going forward?</h3><p>Since the company didn’t define its own business definition for data quality evaluation, I will follow the general process.(This task is intentionally solved by Python)</p>
+<p>To evaluate the quality of data, we can follow the Six Standard Data Quality Dimension: </p>
+<ul>
+<li><strong>Accuracy</strong>: The degree to which the data correctly describe the ‘real-world’ objects. <strong>Example:</strong> <em>if a man is 30 years old, but the data is 35 years old.</em></li>
+<li><strong>Completeness</strong>: Whether the data fulfill the expectation of business comprehensiveness; in other words, whether you can extract the information you want from the data.</li>
+<li><strong>Uniqueness</strong>: Make sure there is no duplicate record in the dataset. <strong>Example</strong>: <em>There are 300 students in total, but there are 350 records</em></li>
+<li><strong>Timeliness</strong>：Make sure that the data is recorded at the time when it occurred. No delay.</li>
+<li><strong>Validity</strong>：Data are valid if it conforms to the syntax (format, type, range) of its definition.**</li>
+<li><strong>Consistency</strong>：The data should be the same as input in other columns.<strong>Example</strong>: <em>If a student name:’Peter Pan’ is in the class name-list, then ‘Peter Pan’in the school name-list should be the same as class name-list.</em> </li>
+</ul>
+<p><a href="https://www.whitepapers.em360tech.com/wp-content/files_mf/1407250286DAMAUKDQDimensionsWhitePaperR37.pdf" target="_blank" rel="noopener">Reference: Defining Data Quality Dimensions</a></p>
+<h4 id="Task-1-Problems-and-Notes"><a href="#Task-1-Problems-and-Notes" class="headerlink" title="Task 1 Problems and Notes"></a>Task 1 Problems and Notes</h4><ol>
+<li>How to use python read the sheets in Excel files ?</li>
+</ol>
 ]]></content>
+      <tags>
+        <tag>Vitrual Internship</tag>
+      </tags>
   </entry>
 </search>
