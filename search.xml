@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>My second post to test</title>
+    <title>Data Science Problems Reviews</title>
     <url>/2020/06/04/My-second-post-to-test/</url>
-    <content><![CDATA[<p>如何过云朵是天空的一封信， 能不能听一听，再听一听你的声音， 就当时探秘， 天空突然放晴。！！如果我说爱你就是这样，我无法答应你，因为就连我自己都不知道我的未来在哪里.</p>
-<p>catergroies: feeling</p>
-<p>tags: love</p>
-]]></content>
+    <content><![CDATA[]]></content>
       <categories>
-        <category>test</category>
+        <category>Problems Reviews</category>
       </categories>
       <tags>
-        <tag>front-end</tag>
+        <tag>Data Science</tag>
+        <tag>Problems</tag>
+        <tag>Solutions</tag>
       </tags>
   </entry>
   <entry>
-    <title> how are you </title>
+    <title>This Website is still Updating..</title>
     <url>/2020/06/04/how-are-you/</url>
     <content><![CDATA[]]></content>
   </entry>
@@ -37,6 +36,9 @@
 <li>How to use python read the sheets in Excel files ?</li>
 </ol>
 ]]></content>
+      <categories>
+        <category>Project Notes</category>
+      </categories>
       <tags>
         <tag>Vitrual Internship</tag>
       </tags>
