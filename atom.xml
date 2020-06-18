@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tiamoyue.github.io/"/>
-  <updated>2020-06-14T22:21:09.372Z</updated>
+  <updated>2020-06-18T04:09:25.553Z</updated>
   <id>https://tiamoyue.github.io/</id>
   
   <author>
@@ -17,17 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>This Website is still Updating..</title>
-    <link href="https://tiamoyue.github.io/2020/06/04/how-are-you/"/>
-    <id>https://tiamoyue.github.io/2020/06/04/how-are-you/</id>
+    <title>Big Data Specialization Concepts and Notes</title>
+    <link href="https://tiamoyue.github.io/2020/06/04/Big%20Data/"/>
+    <id>https://tiamoyue.github.io/2020/06/04/Big%20Data/</id>
     <published>2020-06-04T17:04:37.000Z</published>
-    <updated>2020-06-14T22:21:09.372Z</updated>
+    <updated>2020-06-18T04:09:25.553Z</updated>
     
     <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Course-1-Introduction-to-Big-Data&quot;&gt;&lt;a href=&quot;#Course-1-Introduction-to-Big-Data&quot; class=&quot;headerlink&quot; title=&quot;Course 1 Introduction to
+        
+      
     
     </summary>
     
     
+      <category term="Online Course" scheme="https://tiamoyue.github.io/categories/Online-Course/"/>
+    
+    
+      <category term="Coursera" scheme="https://tiamoyue.github.io/tags/Coursera/"/>
+    
+      <category term="Big Data" scheme="https://tiamoyue.github.io/tags/Big-Data/"/>
+    
+      <category term="UC San Diego" scheme="https://tiamoyue.github.io/tags/UC-San-Diego/"/>
     
   </entry>
   
@@ -36,7 +52,7 @@
     <link href="https://tiamoyue.github.io/2020/06/04/My-second-post-to-test/"/>
     <id>https://tiamoyue.github.io/2020/06/04/My-second-post-to-test/</id>
     <published>2020-06-04T07:24:02.000Z</published>
-    <updated>2020-06-14T21:49:40.085Z</updated>
+    <updated>2020-06-18T03:56:03.333Z</updated>
     
     <summary type="html">
     
@@ -59,7 +75,7 @@
     <link href="https://tiamoyue.github.io/2020/06/02/posttry-to-keep-my-website-runing/"/>
     <id>https://tiamoyue.github.io/2020/06/02/posttry-to-keep-my-website-runing/</id>
     <published>2020-06-03T03:16:32.000Z</published>
-    <updated>2020-06-14T21:47:39.356Z</updated>
+    <updated>2020-06-18T03:00:40.958Z</updated>
     
     <summary type="html">
     

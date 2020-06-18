@@ -14,9 +14,24 @@
       </tags>
   </entry>
   <entry>
-    <title>This Website is still Updating..</title>
-    <url>/2020/06/04/how-are-you/</url>
-    <content><![CDATA[]]></content>
+    <title>Big Data Specialization Concepts and Notes</title>
+    <url>/2020/06/04/Big%20Data/</url>
+    <content><![CDATA[<h3 id="Course-1-Introduction-to-Big-Data"><a href="#Course-1-Introduction-to-Big-Data" class="headerlink" title="Course 1 Introduction to Big Data"></a>Course 1 Introduction to Big Data</h3><h4 id="Week-1"><a href="#Week-1" class="headerlink" title="Week 1"></a>Week 1</h4><ul>
+<li><p><strong>In-Situ analytical processing:</strong> Bringing the computation to where data is located.</p>
+</li>
+<li><p><strong>SCADA(Supervisory Control and Data Acquisition)</strong><br>　　It is a type of industrial control system for remote monitoring and control of industrial processes that exists in the physical world, potentially including multiple sites, many types of sensors.In addition to monitoring and control, SCADA system can be used to define actions for reduced waste and improved efficiency in industrial processes,public or private infrastructure processes,facility processes.</p>
+</li>
+</ul>
+<h4 id="Week-2"><a href="#Week-2" class="headerlink" title="Week 2"></a>Week 2</h4><p>- </p>
+]]></content>
+      <categories>
+        <category>Online Course</category>
+      </categories>
+      <tags>
+        <tag>Coursera</tag>
+        <tag>Big Data</tag>
+        <tag>UC San Diego</tag>
+      </tags>
   </entry>
   <entry>
     <title>KPMG Vitrual Internship Notes</title>
