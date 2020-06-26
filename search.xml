@@ -14,7 +14,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Big Data Specialization Concepts and Notes</title>
+    <title>Big Data Specialization -- Introduction to Big Data</title>
     <url>/2020/06/04/Big%20Data/</url>
     <content><![CDATA[<h3 id="Course-1-Introduction-to-Big-Data"><a href="#Course-1-Introduction-to-Big-Data" class="headerlink" title="Course 1 Introduction to Big Data"></a>Course 1 Introduction to Big Data</h3><h4 id="Week-1"><a href="#Week-1" class="headerlink" title="Week 1"></a>Week 1</h4><ul>
 <li><p><strong>In-Situ analytical processing:</strong> Bringing the computation to where data is located.</p>
@@ -22,7 +22,160 @@
 <li><p><strong>SCADA(Supervisory Control and Data Acquisition)</strong><br>　　It is a type of industrial control system for remote monitoring and control of industrial processes that exists in the physical world, potentially including multiple sites, many types of sensors.In addition to monitoring and control, SCADA system can be used to define actions for reduced waste and improved efficiency in industrial processes,public or private infrastructure processes,facility processes.</p>
 </li>
 </ul>
-<h4 id="Week-2"><a href="#Week-2" class="headerlink" title="Week 2"></a>Week 2</h4><p>- </p>
+<h4 id="Week-2"><a href="#Week-2" class="headerlink" title="Week 2"></a>Week 2</h4><h5 id="1-The-Characteristics-of-Big-Data-The-Six-Fundamentals-of-Big-Data"><a href="#1-The-Characteristics-of-Big-Data-The-Six-Fundamentals-of-Big-Data" class="headerlink" title="1. The Characteristics of Big Data: The Six Fundamentals of Big Data"></a><strong>1. The Characteristics of Big Data: The Six Fundamentals of Big Data</strong></h5><ol>
+<li><p><strong>Volume:</strong> It’s the dimension of big data related to its size and<br>its exponential growth.</p>
+</li>
+<li><p><strong>Variety:</strong> refers to the ever-increasing different forms that data can come in such as text, images, voice, and geospatial data.</p>
+</li>
+<li><p><strong>Velocity:</strong> refers to the increasing speed at which big data is created and the increasing speed at which the data needs to be stored and analyzed.</p>
+<ul>
+<li><strong>Batch Processing （Slow）:</strong> Collect Data, Clean Data, Feed-In Chunks, Wait, Act. </li>
+<li><strong>Real-Time Processing ( Fast):</strong> Instantly Capture Streaming Data, Feed real-time to machines, Process Real-Time, Act.</li>
+</ul>
+</li>
+<li><p><strong>Veracity:</strong> refers to the quality of big data. It sometimes gets referred to as validity or volatility referring to the lifetime of the data.</p>
+</li>
+<li><p><strong>Valence (connectedness):</strong> The more connected data is, the higher it’s valences</p>
+</li>
+<li><p><strong>Value:</strong> The ultimate goal of big data is to get value out to the data.</p>
+</li>
+</ol>
+<h5 id="2-Defining-the-Questions-Building-a-big-data-strategy"><a href="#2-Defining-the-Questions-Building-a-big-data-strategy" class="headerlink" title="2. Defining the Questions - Building a big data strategy:"></a><strong>2. Defining the Questions - Building a big data strategy:</strong></h5><p>As a summary, when building a big data strategy,it is important to </p>
+<ul>
+<li>Integrate big data analytics with business objectives</li>
+<li>Communicate goals and provide organizational buy-in (Commitment, Sponsorship, Communication) for analytics projects</li>
+<li>Build teams with diverse talents, and establish a teamwork mindset.</li>
+<li>Remove barriers to data access and integration</li>
+<li>Finally, these activities need to be iterated to respond to new business goals and technological advances</li>
+</ul>
+<p><strong>Five P’s of Data Science</strong></p>
+<p><img src="/images/fivep.png" alt="Hadoop Ecosystem"></p>
+<ol>
+<li><p><strong>Purpose:</strong> The purpose refers to the challenge or set of challenges defined by your big data strategy. The purpose can be related to a scientific analysis with a hypothesis or a business metric that needs to be analyzed based often on Big Data.</p>
+</li>
+<li><p><strong>People:</strong> The data scientists are often seen as people who possess skills on a variety of topics including science or business domain knowledge; analysis using statistics, machine learning and mathematical knowledge; data management, programming, and computing. In practice, this is generally a group of researchers comprised of people with complementary skills.</p>
+</li>
+<li><p><strong>Process:</strong> The process of data science includes techniques for statistics, machine learning, programming, computing, and data management. A process is conceptual in the beginning and defines the course set of steps and how everyone can contribute to it. Note that similar reusable processes can apply to many applications with different purposes when employed within different workflows. Data science workflows combine such steps in executable graphs. We believe that process-oriented thinking is a transformative way of conducting data science to connect people and techniques to applications. Execution of such a data science process requires access to many datasets, Big and small, bringing new opportunities and challenges to Data Science. There are many Data Science steps or tasks, such as Data Collection, Data Cleaning, Data Processing/Analysis, Result Visualization, resulting in a Data Science Workflow. Data Science Processes may need user interaction and other manual operations, or be fully automated. Challenges for the data science process include 1) how to easily integrate all needed tasks to build such a process; 2) how to find the best computing resources and efficiently schedule process executions to the resources based on process definition, parameter settings, and user preferences.</p>
+</li>
+<li><p><strong>Platforms:</strong> Based on the needs of an application-driven purpose and the amount of data and computing required to perform this application, different computing and data platforms can be used as a part of the data science process. This scalability should be made part of any data science solution architecture.</p>
+</li>
+<li><p><strong>Programmability:</strong> Capturing a scalable data science process requires aid from programming languages, e.g., R, and patterns, e.g., MapReduce. Tools that provide access to such programming techniques are key to making the data science process programmable on a variety of platforms.</p>
+</li>
+</ol>
+<h5 id="3-The-Process-of-Data-Analysis-Five-steps-activities-of-the-data-science-process"><a href="#3-The-Process-of-Data-Analysis-Five-steps-activities-of-the-data-science-process" class="headerlink" title="3. The Process of Data Analysis - Five steps activities of the data science process:"></a><strong>3. The Process of Data Analysis - Five steps activities of the data science process:</strong></h5><ol>
+<li><p><strong>Acquire:</strong> includes anything that makes us retrieve data including; finding, accessing, acquiring, and moving data. It includes identification of and authenticated access to all related data. And transportation of data from sources to distributed files systems</p>
+</li>
+<li><p><strong>Prepare:</strong> </p>
+<ul>
+<li><strong>Explorer:</strong> The first step in data preparation involves looking at the data to understand its nature, what it means, its quality, and format.</li>
+<li><strong>Pre-processing of data:</strong> Pre-processing includes cleaning data, sub-setting or filtering data, creating data, which programs can read and understand, such as modeling raw data into a more defined data model,or packaging it using a specific data format.</li>
+</ul>
+</li>
+<li><p><strong>Analyze:</strong> Select the analytical technique, build models.</p>
+</li>
+<li><p><strong>Report:</strong> Communicating results includes evaluation of analytical results. Presenting them in a visual way, creating reports that include an assessment of results with respect to success criteria.</p>
+</li>
+<li><p><strong>Act:</strong> Reporting insights from analysis and determining actions from insights based on the purpose.</p>
+</li>
+</ol>
+<h4 id="Week-3"><a href="#Week-3" class="headerlink" title="Week 3"></a>Week 3</h4><h5 id="1-Basic-Scalable-Concepts-Scalable-Computing-over-the-Internet"><a href="#1-Basic-Scalable-Concepts-Scalable-Computing-over-the-Internet" class="headerlink" title="1. Basic Scalable Concepts - Scalable Computing over the Internet:"></a><strong>1. Basic Scalable Concepts - Scalable Computing over the Internet:</strong></h5><ul>
+<li><strong>Parallel computer:</strong>  a parallel computer is a very large number of single computing nodes with specialized capabilities connected to other networks.</li>
+<li><strong>Commodity cluster:</strong> affordable parallel computers with an average number of computing nodes.They are not as powerful as traditional parallel computers and are often built out of less specialized nodes. These types of systems have a higher potential for partial failures. It is this type of distributed computing that pushed for a change towards cost-effective reliable and Fault-tolerant systems for management and analysis of big data</li>
+</ul>
+<h5 id="2-The-Requirements-For-Big-Data-Programming-Model"><a href="#2-The-Requirements-For-Big-Data-Programming-Model" class="headerlink" title="2. The Requirements For Big Data Programming Model:"></a><strong>2. The Requirements For Big Data Programming Model:</strong></h5><ol>
+<li><strong>Support Big Data Operation:</strong><ul>
+<li>Split volumes of data</li>
+<li>Access data fast</li>
+<li>Distribute computations to nodes</li>
+</ul>
+</li>
+<li><strong>Handle Fault tolerance</strong><ul>
+<li>Replicate data partition</li>
+<li>Recover files when needs</li>
+</ul>
+</li>
+<li><strong>Enable Adding More Racks</strong><ul>
+<li>Adding new resources to more or faster data without losing performance (scaling out).</li>
+<li>Optimized for specific data types</li>
+</ul>
+</li>
+</ol>
+<h5 id="3-Getting-Started-With-Hadoop"><a href="#3-Getting-Started-With-Hadoop" class="headerlink" title="3. Getting Started With Hadoop"></a><strong>3. Getting Started With Hadoop</strong></h5><p>![Hadoop Ecosystem](/images/Hadoop eco.png)</p>
+<p><strong>HDFS:</strong> The Hadoop Distributed File System, a storage system for big data.It serves as the foundation for most tools in the <strong>Hadoop ecosystem</strong>.</p>
+<p>It provides two capabilities that are essential for managing big data.</p>
+<ul>
+<li>Scalability to large data sets. </li>
+<li>Reliability to cope with hardware failures. By default, HDFS maintains three copies of every block</li>
+</ul>
+<p><strong>Two key components of HDFS:</strong></p>
+<ol>
+<li><p><strong>NameNode for Metadata:</strong></p>
+<ul>
+<li>One namenode per cluster</li>
+<li>Coordinator of HDFS cluster</li>
+<li>Records the name, location in the directory hierarchy and other metadata</li>
+<li>Decides which data nodes to store the contents of the file and remembers this mapping</li>
+</ul>
+</li>
+<li><p><strong>DataNode for block storage</strong></p>
+<ul>
+<li><strong>Datanode</strong> Runs on each node on the cluster and is responsible for storing the file blocks</li>
+<li>listens to commands from the name node for block creation, deletion, and replication. </li>
+<li>Replication provides two key capabilities: <ul>
+<li>Fault tolerance,  Data locality</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>YARN: The Resource Manager for Hadoop</strong><br>YARN interacts with applications and schedules resources for their use.</p>
+<p><strong>Essential Gear in YARN engine:</strong></p>
+<ul>
+<li><strong>Resource manager:</strong> controls all the resources, and decides who gets what</li>
+<li><strong>Application Manager:</strong> It negotiates resource from the Resource Manager and it talks to Node Manager to get its tasks completed</li>
+<li><strong>Node Manager:</strong> operates at the machine level and is in charge of a single machine</li>
+<li><strong>Container (Machine):</strong> abstract Notions that signifies a resource that is a collection of CPU memory disk network and other resources within the Compute node</li>
+</ul>
+<p><strong>Mapreduce:</strong> 　　</p>
+<p>　　It is a big data programming model that supports all<br>the requirements of big data modeling we mentioned. It can model processing large data, split complications into different parallel tasks and make efficient use of large commodity clusters and distributed file systems.</p>
+<ul>
+<li>Map: Applys operation to all elements and generates key-values pairs.</li>
+<li>Reduce: Summarize operation on elements and construct one output file.</li>
+</ul>
+<p><strong>MapReduce is bad for:</strong></p>
+<ul>
+<li>Frequently changing data (slow)</li>
+<li>Dependent tasks</li>
+<li>Interactive analysis</li>
+</ul>
+<p><strong>When to reconsider Hadoop:</strong></p>
+<ul>
+<li><p><strong>Key feature that makes problem Hadoop friendly:</strong></p>
+<ul>
+<li>Future anticipated data growth</li>
+<li>Long term availability of data</li>
+<li>Many platforms over single datastore</li>
+<li>High Volume, High variety</li>
+</ul>
+</li>
+<li><p><strong>Be careful when:</strong></p>
+<ul>
+<li>Small dataset</li>
+<li>Task Level Parallelism ( Furuethrer analysis for which tool to use in Hadoop ecosystem)</li>
+<li>Advanced algorithms (Not all algorithms are scalable in Hadoop, or reducible to one of the programming models supported by YARN</li>
+<li>Random Data Access ( you may have to read an entire file just to pick one data entry)</li>
+</ul>
+</li>
+</ul>
+<h5 id="4-Cloud-Computing-On-demand-computing-it-enables-us-to-compute-any-time-any-anywhere"><a href="#4-Cloud-Computing-On-demand-computing-it-enables-us-to-compute-any-time-any-anywhere" class="headerlink" title="4. Cloud Computing( On-demand computing: it enables us to compute any time any anywhere)"></a><strong>4. Cloud Computing( On-demand computing: it enables us to compute any time any anywhere)</strong></h5><p><strong>Service Model:</strong></p>
+<ul>
+<li><p><strong>IaaS:</strong> infrastructure as a service, can be defined as a bare minimum rental service. This is like renting a truck from a company that you can assume has hardware and you do the packing of your furniture, and drive to your new house.</p>
+</li>
+<li><p><strong>PaaS:</strong> platform as a service,<br>is the model where a user is provided with an entire computing platform.<br>This could include the operating system and programming languages that you need</p>
+</li>
+<li><p><strong>SaaS:</strong> the software as a service model, is the model<br>in which the cloud service provider takes the responsibilities for the hardware and software environments such as the operating system and the application software</p>
+</li>
+</ul>
 ]]></content>
       <categories>
         <category>Online Course</category>
