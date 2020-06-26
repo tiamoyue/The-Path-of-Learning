@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    HackerRank Problems Reviews |  Welcome To My Journey
+    Web-Mining Full Project Report |  Welcome To My Journey
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -58,7 +58,7 @@ ga('send', 'pageview');
   <div id="app">
     <main class="content on">
       <section class="outer">
-  <article id="post-My-second-post-to-test" class="article article-type-post" itemscope
+  <article id="post-eb-Mining-Full-Project-Report" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -66,7 +66,7 @@ ga('send', 'pageview');
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  HackerRank Problems Reviews
+  Web-Mining Full Project Report
 </h1>
  
 
@@ -75,14 +75,10 @@ ga('send', 'pageview');
 
     
     <div class="article-meta">
-      <a href="/2020/06/04/My-second-post-to-test/" class="article-date">
-  <time datetime="2020-06-04T07:24:00.000Z" itemprop="datePublished">2020-06-04</time>
+      <a href="/2020/06/26/eb-Mining-Full-Project-Report/" class="article-date">
+  <time datetime="2020-06-26T04:20:00.000Z" itemprop="datePublished">2020-06-26</time>
 </a>
       
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/HackerRank/">HackerRank</a>
-  </div>
-
       
       
 <div class="word_count">
@@ -90,7 +86,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">0</span>
+            <span class="post-count">1.8k</span>
         </span>
     </span>
 
@@ -99,7 +95,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">1 min</span>
+            <span class="post-count">11 min</span>
         </span>
     </span>
 </div>
@@ -110,6 +106,8 @@ ga('send', 'pageview');
 
     
     
+    <div class="tocbot"></div>
+
 
 
 
@@ -122,7 +120,33 @@ ga('send', 'pageview');
       
 
       
-      
+      <h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><p>　In the past one year, PUBG became one of the most popular games in the word and at the same time it also received thousands of negative comments and thus we planned to start a project to help those developers and operators extract valuable information from those critics. The purpose of my project is to get suggestions from those critics, and then I plan to assign labels for players manually to classify those clear-minded supporters and critics and then train some classification models to discover more critics with firm stand. Next, I made a word interpretation base on those comments made by critics and made some suggestions to PUBG. Finally, I proposed some future improvements for the project.</p>
+<h3 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h3><p>　PUBG, one of the most popular shooting games on steam, was published by PUBG Corporation, a subsidiary of South Korean video game company Bluehole. This game was released officially in September 2018. The game is one of the best-selling of all time, with over fifty million sold across all platforms by June 2018. In addition, the Windows version holds a peak concurrent player count of over three million on Steam, which is an all-time high on the platform. PUBG received thousands of reviews from players, who found that there are still many bugs and problems existed in the game.Thus, I decide to research on discovering useful information from those reviews.</p>
+<h3 id="Purpose"><a href="#Purpose" class="headerlink" title="Purpose"></a>Purpose</h3><p>　In this project, I am trying to detect some useful information from the reviews and have a deep understanding of the game by analysis crawled from the Steam reviews community. After this project, I hope my analysis will help game developers identify the problems that most players concerned about.</p>
+<h3 id="Data-Preparation"><a href="#Data-Preparation" class="headerlink" title="Data Preparation"></a>Data Preparation</h3><p>　In this project, the data source comes from Steam.I use <strong>Selenium</strong> to scrape some reviews page. And we put all the reviews until the bottom of the page by executing Javascript. I use CSS selectors to get all the attributes including user comment date, user reviews, whether users recommend or not, how many hours spent on the game, and how many games users hold in the account.</p>
+<h3 id="Data-Description"><a href="#Data-Description" class="headerlink" title="Data Description"></a>Data Description</h3><p>　The data size is 2070. The data contains three independent variables including spent hours, hold products and user reviews, and one dependent variable which is “recommended or not”. Spent hours refers to how many hours that players have spent on the game. Hold products refers to how many games user hold in their accounts. User reviews refer to what players comment on the website. Recommend or not refers to whether the player recommends this game or not. The sample data presented below:<br>On the platform, each user can easily write down their feedbacks toward the game and they will assign a label of whether they want to recommend or not-recommend this game to other players. Steam will also list the information of users such as hours of playing, the Steam products in the user’s account, and other players’ attitudes toward this comment. This review system will give the game companies or developers an overall insight into how this running on this platform by collecting all the data from users’ reviews. The user interface shows below:</p>
+<h3 id="Data-cleaning"><a href="#Data-cleaning" class="headerlink" title="Data cleaning"></a>Data cleaning</h3><p>　The data contains some symbols and stop words which cause problems for me to find meaningful information from the user reviews and thus I remove these noise and transfer all characters into lower cases and split the reviews into words.</p>
+<h3 id="Exploratory-Data-Analysis"><a href="#Exploratory-Data-Analysis" class="headerlink" title="Exploratory Data Analysis"></a>Exploratory Data Analysis</h3><p>　Next, I did some simple exploratory data analysis to find the correlation among these variables. Firstly, I made a bar chart to present the relation between spent hours  and recommendations<br>As the bar chart presents above, I find that the people who have spent more than 1900 hours on PUBG tend to recommend this game. In other words, this game is very popular with old players, and thus the reviews made by this part of players are more meaningful for the operator.<br>And then, I made a scatter plot to explore the relation between spent hours and hold products.</p>
+<h3 id="Modeling"><a href="#Modeling" class="headerlink" title="Modeling"></a>Modeling</h3><p>　In this part, I use both supervised learning algorithms and unsupervised learning algorithms to make models.</p>
+<h4 id="Unsupervised-learning"><a href="#Unsupervised-learning" class="headerlink" title="Unsupervised learning"></a>Unsupervised learning</h4><h5 id="VADER"><a href="#VADER" class="headerlink" title="VADER"></a>VADER</h5><p>　<strong>VADER</strong> analyzes a piece of text to see if any of the words in the text is present in the lexicon. Sentiment metrics are derived from the ratings of such words positive, neutral, and negative, represent the proportion of the text that falls into those categories.The final metric, the compound score, is the sum of all the lexicon ratings which have been standardized to range between -1 and 1 based on some heuristics.In my project, I want to see users’ sentiment for each of the reviews by applying VADER analysis, and thus group those negative sentiment for company inspect.<br>From the result shown above, reviews have been classified into three categories: positive sentiment, neutral sentiment, and negative sentiment.In positive sentiment,77.45% of reviews have been correctly　classified;In neutral sentiment,75.33 are recommended reviews and 24.66% are not recommended reviews; In negative sentiment, 26.38% negative reviews　have been correctly classified.I visualize the model result.The model has bad performance on negative sentiment. And then I try to find the reasons.After I dig into the reviews, I find out the reviews sometimes full of sarcasm, the computer is not capable of recognizing the emotion behind the sentences. For example: “This game used to be good, but now it is just game for cheaters.” Then I got a conclusion that the labels in the review system didn’t truly reflect the attitudes of players and thus the game developer can also possibly mislead by the data of labels.</p>
+<h5 id="LDA"><a href="#LDA" class="headerlink" title="LDA"></a>LDA</h5><p>　Due to the massive information of reviews, it’s difficult for operators to analyze the reviews one by one. So, I use LDA (Latent Dirichlet allocation) to generate topics for the document. This model reduces the dimensionalities of words and thus it worked more efficiently compared with bag-of-words model and got rid of overfitting. I visualized three top topics as below:<br>Through these pictures, I found more negative words than positive words. These words state that the server of the game is bad and mountains of cheaters in this game and this game didn’t any improvement over time. This result may confuse us why there are more negative words and in the EDA stage I found that more people recommended this game, but in the VADER model, I have found that 75.33% of people who have neutral attitudes have been classified as supporters. And by reading some comments, I found that these people’s comments contain a lot of negative words and that’s the reason why I found so many negative words here. Through the LDA and VADER model, I got a conclusion that I cannot simply classify people by their comments’ labels, and thus, I planned to select those clear-minded comments to train the classification model to find more players with a firm stand.</p>
+<h4 id="Supervised-learning"><a href="#Supervised-learning" class="headerlink" title="Supervised learning"></a>Supervised learning</h4><p>　The classification models are applied to detect positive and negative users. Since there are a great many reviews are not labeled in other sources. It is necessary to classify a large number of reviews and get directions for later improvement, especially from the negative sentiments.</p>
+<h5 id="Multinomial-Naive-Bayes"><a href="#Multinomial-Naive-Bayes" class="headerlink" title="Multinomial Naïve Bayes"></a>Multinomial Naïve Bayes</h5><p>　<strong>Multinomial Naïve Bayes</strong> is suitable for classification with word counts for text classification, such as TF-IDF weight.<br>As the result shows above, this model has a good performance. The precision rate is 0.84 and the recall rate is 0.82.</p>
+<h5 id="Support-Vector-Classification"><a href="#Support-Vector-Classification" class="headerlink" title="Support Vector Classification"></a>Support Vector Classification</h5><p>　<strong>Support vector machine</strong> constructs a hyper-plane or set of hyper-planes in a high or infinite-dimensional space, which can be used for classification. As the pictures are shown above, a good separation is achieved by the hyper-plane that has the largest distance to the nearest training data points of any class. It has 0.85 of precision rate and 0.83 of recall rate.</p>
+<h5 id="Logistic-Regression"><a href="#Logistic-Regression" class="headerlink" title="Logistic Regression"></a><strong>Logistic Regression</strong></h5><p>　<strong>Logistic Regression</strong> model the probabilities of a recommendation as a linear function of documents term matrix and classify reviews into two categories based on TF-IDF weights of bag-of-words.<br>As the pictures are shown above, it has 84% precision rate and 80% recall rate. In summary, MNB, SVM, and Logistic Regression have good performance.</p>
+<h5 id="CNN"><a href="#CNN" class="headerlink" title="CNN"></a><strong>CNN</strong></h5><p>　<strong>CNN</strong> model is introduced since it has advantages in imbalanced data classification. The doc2vec and word2vec are used to train a large number of unlabeled reviews to generate a fixed weights word matrix to map the word in the embedding phase. The doc2vec is different in predicting the word by concatenating the paragraph vector D (shared within the paragraph). The words vector trained by Doc2Vec has a better performance when checking the similarities of the words.<br>The figure describes the top 5 most similar word with ‘play’:<br>The CNN model is using three sizes of filters (bigram, trigram, and quadrigram), each size has 64 filters in the convolutional layer.<br>In summary, the CNN model that using a pre-trained matrix has a better performance as the picture shown above.</p>
+<h3 id="Word-Interpretation"><a href="#Word-Interpretation" class="headerlink" title="Word Interpretation"></a>Word Interpretation</h3><p>　To get some insights from negative sentiment reviews, I use TFIDF weights and Word2Vec to dig out content from reviews.<br>As the picture shows, I picked the top ten words which have the highest frequency. Some words such as bad, time, money are keywords that might point to the potential problem.<br>Next step, I use Word2Vec to find the most similar words with these top 10 words, trying to find correlations between targeted words.<br>As a result, the problems found are as follows:</p>
+<ol>
+<li>A lot of game issues</li>
+<li>Serious time delay for server lags</li>
+<li>Devs(Developer) fix the bug</li>
+<li>Vehicle issue in the game</li>
+<li>Waste money</li>
+<li>A lot of cheaters</li>
+</ol>
+<h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>　In unsupervised learning, I found that the label in the dataset cannot accurately describe the attitude of players, but the purpose of my project is to excavate valuable information from critics and thus it’s very important to train a model to find those critics with frim stand. And then I trained several classification models including Multinomial Naïve Bayes, SVM, Logistic Regression, and CNN, and found that CNN has the best performance among these models. Finally, I explain the words meaning after classification and then give the suggestion based on what I got from the result and raise the suggestion to the company. Wipe out cheaters from the game, it hugely impacts the user’s game experience. Give more support to users when they meet with game issues. Developers need to put more effort to optimize game and fix those existed bugs. Cautiously deal with the micro-transaction, make it reasonable to users.</p>
+<h3 id="Future-Improvement"><a href="#Future-Improvement" class="headerlink" title="Future Improvement"></a>Future Improvement</h3><p>　There are still some improvements that I can make in the future. For example, I can try the Steam Game Platform API,and I can improve VADER by updating the word list. Since VADER is defined as Sentiment metrics techniques, I expect to improve model performance by updating the word list and re-training the model.</p>
+
       
       <!-- reward -->
       
@@ -170,14 +194,14 @@ ga('send', 'pageview');
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://tiamoyue.github.io/2020/06/04/My-second-post-to-test/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://tiamoyue.github.io/2020/06/26/eb-Mining-Full-Project-Report/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/30-Days-Python/" rel="tag">30 Days Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HackerRank/" rel="tag">HackerRank</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NLP/" rel="tag">NLP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web-Scraping/" rel="tag">Web Scraping</a></li></ul>
 
 
     </footer>
@@ -188,19 +212,10 @@ ga('send', 'pageview');
   
   <nav class="article-nav">
     
+    
       <a href="/2020/06/04/Big%20Data/" class="article-nav-link">
-        <strong class="article-nav-caption">Previous</strong>
-        <div class="article-nav-title">
-          
-            Big Data Specialization -- Introduction to Big Data
-          
-        </div>
-      </a>
-    
-    
-      <a href="/2020/06/02/posttry-to-keep-my-website-runing/" class="article-nav-link">
         <strong class="article-nav-caption">Next</strong>
-        <div class="article-nav-title">KPMG Vitrual Internship Notes</div>
+        <div class="article-nav-title">Big Data Specialization -- Introduction to Big Data</div>
       </a>
     
   </nav>
