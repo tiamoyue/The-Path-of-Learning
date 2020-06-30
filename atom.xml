@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tiamoyue.github.io/"/>
-  <updated>2020-06-26T06:45:24.466Z</updated>
+  <updated>2020-06-30T03:05:55.187Z</updated>
   <id>https://tiamoyue.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Web-Mining Full Project Report</title>
-    <link href="https://tiamoyue.github.io/2020/06/26/eb-Mining-Full-Project-Report/"/>
-    <id>https://tiamoyue.github.io/2020/06/26/eb-Mining-Full-Project-Report/</id>
-    <published>2020-06-26T04:20:00.000Z</published>
-    <updated>2020-06-26T06:45:24.466Z</updated>
+    <title>Data Visulization and Analysis</title>
+    <link href="https://tiamoyue.github.io/2020/06/29/y-First-Data-Visulization/"/>
+    <id>https://tiamoyue.github.io/2020/06/29/y-First-Data-Visulization/</id>
+    <published>2020-06-29T20:55:22.000Z</published>
+    <updated>2020-06-30T03:05:55.187Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,53 @@
       
         
         
-          &lt;h3 id=&quot;Abstract&quot;&gt;&lt;a href=&quot;#Abstract&quot; class=&quot;headerlink&quot; title=&quot;Abstract&quot;&gt;&lt;/a&gt;Abstract&lt;/h3&gt;&lt;p&gt;　In the past one year, PUBG became one of the
+          &lt;blockquote&gt;
+&lt;p&gt;In 2017, I started my first coding practice by using R. Then, I realize that computer language is not rocketscience that I
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Quantitative Finance</title>
+    <link href="https://tiamoyue.github.io/2020/06/29/omputational-Finance/"/>
+    <id>https://tiamoyue.github.io/2020/06/29/omputational-Finance/</id>
+    <published>2020-06-29T16:39:00.000Z</published>
+    <updated>2020-06-29T19:26:36.820Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="Finance" scheme="https://tiamoyue.github.io/categories/Finance/"/>
+    
+    
+      <category term="Rstudio" scheme="https://tiamoyue.github.io/tags/Rstudio/"/>
+    
+      <category term="Quant" scheme="https://tiamoyue.github.io/tags/Quant/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Web-Mining Full Project Report</title>
+    <link href="https://tiamoyue.github.io/2020/06/26/eb-Mining-Full-Project-Report/"/>
+    <id>https://tiamoyue.github.io/2020/06/26/eb-Mining-Full-Project-Report/</id>
+    <published>2020-06-26T04:20:00.000Z</published>
+    <updated>2020-06-29T17:25:05.288Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;In retrospect my first NLP project,it was a really great learning experience that got me through the process of nature
         
       
     
