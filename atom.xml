@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tiamoyue.github.io/"/>
-  <updated>2020-06-30T03:05:55.187Z</updated>
+  <updated>2020-07-02T04:21:38.942Z</updated>
   <id>https://tiamoyue.github.io/</id>
   
   <author>
@@ -17,11 +17,61 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Leetcode Problem Set</title>
+    <link href="https://tiamoyue.github.io/2020/07/02/etcode-Problem-Set/"/>
+    <id>https://tiamoyue.github.io/2020/07/02/etcode-Problem-Set/</id>
+    <published>2020-07-02T04:08:00.000Z</published>
+    <updated>2020-07-02T04:21:38.942Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="Leetcode" scheme="https://tiamoyue.github.io/categories/Leetcode/"/>
+    
+    
+      <category term="Python" scheme="https://tiamoyue.github.io/tags/Python/"/>
+    
+      <category term="Code" scheme="https://tiamoyue.github.io/tags/Code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HackerRank 50 Python Practice</title>
+    <link href="https://tiamoyue.github.io/2020/07/01/HackerRank-Python-Practice/"/>
+    <id>https://tiamoyue.github.io/2020/07/01/HackerRank-Python-Practice/</id>
+    <published>2020-07-01T22:09:00.000Z</published>
+    <updated>2020-07-02T04:19:55.582Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;1-Write-Function&quot;&gt;&lt;a href=&quot;#1-Write-Function&quot; class=&quot;headerlink&quot; title=&quot;1. Write Function&quot;&gt;&lt;/a&gt;1. Write Function&lt;/h4&gt;&lt;p&gt;We add a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="HackerRank" scheme="https://tiamoyue.github.io/categories/HackerRank/"/>
+    
+    
+      <category term="Python" scheme="https://tiamoyue.github.io/tags/Python/"/>
+    
+      <category term="Code" scheme="https://tiamoyue.github.io/tags/Code/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Data Visulization and Analysis</title>
     <link href="https://tiamoyue.github.io/2020/06/29/y-First-Data-Visulization/"/>
     <id>https://tiamoyue.github.io/2020/06/29/y-First-Data-Visulization/</id>
-    <published>2020-06-29T20:55:22.000Z</published>
-    <updated>2020-06-30T03:05:55.187Z</updated>
+    <published>2020-06-29T20:55:00.000Z</published>
+    <updated>2020-07-01T22:07:22.558Z</updated>
     
     <summary type="html">
     
@@ -37,6 +87,12 @@
     </summary>
     
     
+      <category term="Project" scheme="https://tiamoyue.github.io/categories/Project/"/>
+    
+    
+      <category term="Tableau" scheme="https://tiamoyue.github.io/tags/Tableau/"/>
+    
+      <category term="Data analysis" scheme="https://tiamoyue.github.io/tags/Data-analysis/"/>
     
   </entry>
   
@@ -66,7 +122,7 @@
     <link href="https://tiamoyue.github.io/2020/06/26/eb-Mining-Full-Project-Report/"/>
     <id>https://tiamoyue.github.io/2020/06/26/eb-Mining-Full-Project-Report/</id>
     <published>2020-06-26T04:20:00.000Z</published>
-    <updated>2020-06-29T17:25:05.288Z</updated>
+    <updated>2020-07-01T22:06:48.389Z</updated>
     
     <summary type="html">
     
@@ -81,6 +137,8 @@
     
     </summary>
     
+    
+      <category term="Project" scheme="https://tiamoyue.github.io/categories/Project/"/>
     
     
       <category term="Python" scheme="https://tiamoyue.github.io/tags/Python/"/>
@@ -123,13 +181,24 @@
   </entry>
   
   <entry>
-    <title>HackerRank Problems Reviews</title>
+    <title>HackerRank 30-days Python</title>
     <link href="https://tiamoyue.github.io/2020/06/04/My-second-post-to-test/"/>
     <id>https://tiamoyue.github.io/2020/06/04/My-second-post-to-test/</id>
     <published>2020-06-04T07:24:00.000Z</published>
-    <updated>2020-06-26T04:18:38.838Z</updated>
+    <updated>2020-07-02T03:33:23.752Z</updated>
     
     <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;This post only records the Tasks I made mistakes.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;Intro-to-Conditional-Statements&quot;&gt;&lt;a
+        
+      
     
     </summary>
     

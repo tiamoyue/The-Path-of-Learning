@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    HackerRank Problems Reviews |  Welcome To My Journey
+    HackerRank 30-days Python |  Welcome To My Journey
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -66,7 +66,7 @@ ga('send', 'pageview');
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  HackerRank Problems Reviews
+  HackerRank 30-days Python
 </h1>
  
 
@@ -90,7 +90,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">0</span>
+            <span class="post-count">505</span>
         </span>
     </span>
 
@@ -99,7 +99,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">1 min</span>
+            <span class="post-count">3 min</span>
         </span>
     </span>
 </div>
@@ -110,6 +110,8 @@ ga('send', 'pageview');
 
     
     
+    <div class="tocbot"></div>
+
 
 
 
@@ -122,7 +124,41 @@ ga('send', 'pageview');
       
 
       
-      
+      <blockquote>
+<p>This post only records the Tasks I made mistakes.</p>
+</blockquote>
+<h4 id="Intro-to-Conditional-Statements"><a href="#Intro-to-Conditional-Statements" class="headerlink" title="Intro to Conditional Statements"></a>Intro to Conditional Statements</h4><p><strong>Task:</strong> Given an integer,n, perform the following conditional actions:</p>
+<ul>
+<li>If  is odd, print Weird</li>
+<li>If  is even and in the inclusive range of  to , print Not Weird</li>
+<li>If  is even and in the inclusive range of  to , print Weird</li>
+<li>If  is even and greater than , print Not Weird</li>
+</ul>
+<p>Complete the stub code provided in your editor to print whether or not  is weird.</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">   n = int(input().strip())</span><br><span class="line">   <span class="keyword">if</span> n%<span class="attribute">2</span>==0 <span class="keyword">and</span> (n <span class="keyword">in</span> range (2,6) <span class="keyword">or</span> n&gt;20):</span><br><span class="line">   		<span class="builtin-name">print</span>(<span class="string">'Not Weird'</span>)</span><br><span class="line">   <span class="keyword">if</span> n%<span class="attribute">2</span>==1 <span class="keyword">or</span> (n%<span class="attribute">2</span>==0 <span class="keyword">and</span> (n <span class="keyword">in</span> range(6,21))):</span><br><span class="line">      <span class="builtin-name">print</span>(<span class="string">'Weird'</span>)</span><br></pre></td></tr></table></figure>
+<p><strong>Note:</strong> When think about the condition, we can simply catergorize the condition and try whether we can put them in one statement, which will make the codes cleaner.</p>
+<h4 id="Class-vs-Instance"><a href="#Class-vs-Instance" class="headerlink" title="Class vs. Instance"></a>Class vs. Instance</h4><p><strong>Task:</strong> Write a Person class with an instance variable,<strong><em>age</em> <em>*,and a constructor that takes an integer,</em></strong>initialAge<strong>* , as a parameter. The constructor must assign *</strong>initialAge<strong>* to <em>age</em> after confirming the argument passed as *</strong>initialAge<strong>* is not negative; if a negative argument is passed as *</strong>initialAge<strong>*, the constructor should set *</strong>age*** to 0 and print Age is not valid, setting age to 0.. In addition, you must write the following instance methods:</p>
+<ol>
+<li>yearPasses() should increase the instance variable by 1.</li>
+<li>amIOld() should perform the following conditional actions:<ul>
+<li>If <strong>age &lt; 13</strong> , print You are young..</li>
+<li>If <strong>age $\geq$ 13</strong> and <strong>age &lt; 18</strong>, print You are a teenager..</li>
+<li>Otherwise, print You are old..</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">class Person:</span><br><span class="line">    age = 0</span><br><span class="line">    def __init__(self,initialAge):</span><br><span class="line">        # <span class="builtin-name">Add</span> some more code <span class="keyword">to</span> <span class="builtin-name">run</span> some checks on initialAge</span><br><span class="line">        <span class="keyword">if</span> initialAge &lt; 0:</span><br><span class="line">            <span class="builtin-name">print</span> (<span class="string">"Age is not valid, setting age to 0."</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.age = initialAge</span><br><span class="line">    def amIOld(self):</span><br><span class="line">        # <span class="keyword">Do</span> some computations <span class="keyword">in</span> here <span class="keyword">and</span> <span class="builtin-name">print</span> out the correct statement <span class="keyword">to</span> the console</span><br><span class="line">        <span class="keyword">if</span> self.age &lt; 13:</span><br><span class="line">            <span class="builtin-name">print</span> (<span class="string">"You are young."</span>)</span><br><span class="line">        elif self.age &gt;= 13 <span class="keyword">and</span> self.age &lt; 18:</span><br><span class="line">            <span class="builtin-name">print</span> (<span class="string">"You are a teenager."</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="builtin-name">print</span> (<span class="string">"You are old."</span>)</span><br><span class="line">    def yearPasses(self):</span><br><span class="line">        # Increment the age of the person <span class="keyword">in</span> here</span><br><span class="line">        self.age += 1</span><br></pre></td></tr></table></figure>
+<h4 id="Loops"><a href="#Loops" class="headerlink" title="Loops"></a>Loops</h4><p><strong>Task</strong>: Given an integer, , print its first  multiples. Each multiple  (where ) should be printed on a new line in the form: n x i = result.</p>
+<p><strong>input Format:</strong> A single integer,<strong>n</strong></p>
+<p><strong>Constraints:</strong> 2 $\leq$ n $\leq$ 20 </p>
+<p><strong>Output Format:</strong></p>
+<p>Print <strong>10</strong> lines of output; each line <strong>i</strong> (where 1 \leq i \leq 10) contains the <strong>result</strong> of <strong>n x i</strong> in the form:<br><strong>n x i = result</strong></p>
+<p>Sample Input: 2</p>
+<p>Sample Output:</p>
+<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">2 </span>x <span class="number">1</span> = <span class="number">2</span></span><br><span class="line"><span class="symbol">2 </span>x <span class="number">2</span> = <span class="number">4</span></span><br><span class="line"><span class="symbol">2 </span>x <span class="number">3</span> = <span class="number">6</span></span><br><span class="line"><span class="symbol">2 </span>x <span class="number">4</span> = <span class="number">8</span></span><br><span class="line"><span class="symbol">2 </span>x <span class="number">5</span> = <span class="number">10</span></span><br><span class="line"><span class="symbol">2 </span>x <span class="number">6</span> = <span class="number">12</span></span><br><span class="line"><span class="symbol">2 </span>x <span class="number">7</span> = <span class="number">14</span></span><br><span class="line"><span class="symbol">2 </span>x <span class="number">8</span> = <span class="number">16</span></span><br><span class="line"><span class="symbol">2 </span>x <span class="number">9</span> = <span class="number">18</span></span><br><span class="line"><span class="symbol">2 </span>x <span class="number">10</span> = <span class="number">20</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">   n = int(input())</span><br><span class="line">   <span class="keyword">for</span> i <span class="keyword">in</span> range (1,11):</span><br><span class="line">       <span class="attribute">result</span>=n*i</span><br><span class="line">       <span class="builtin-name">print</span>(<span class="string">'%s x %s = %s'</span>%(n,i,result))</span><br></pre></td></tr></table></figure>
+<p><strong>Note</strong>: The format string expression: <strong>print(‘%s x %s = %s’%(n,i,result))</strong>. Use tuple <strong>(n,i,result)</strong> to pass value into the formatted experession.</p>
+
       
       <!-- reward -->
       
