@@ -90,7 +90,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">309</span>
+            <span class="post-count">308</span>
         </span>
     </span>
 
@@ -134,7 +134,9 @@ ga('send', 'pageview');
 </ul>
 </li>
 </ul>
-<p>This means that in the Gregorian calendar, the years 2000 and 2400 are leap years, while 1800, 1900, 2100, 2200, 2300 and 2500 are NOT leap years.Source</p>
+<p>This means that in the Gregorian calendar, the years 2000 and 2400 are leap years, while 1800, 1900, 2100, 2200, 2300 and 2500 are NOT leap years.</p>
+<a id="more"></a>
+
 <p><strong>Task:</strong><br>You are given the year, and you have to write a function to check if the year is leap or not.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">is_leap</span><span class="params">(year)</span>:</span>   </span><br><span class="line">    <span class="keyword">if</span> year%<span class="number">400</span>==<span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">elif</span> year%<span class="number">100</span>==<span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">elif</span> year%<span class="number">4</span>==<span class="number">0</span>: </span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span> </span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></table></figure>
 <p><strong>Note:</strong> Pay attention to the order among the if condition statement.</p>
@@ -144,7 +146,7 @@ ga('send', 'pageview');
 <p><strong>Sample Output:</strong></p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[[<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>], [<span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>], [<span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>], [<span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>], [<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>]]</span><br></pre></td></tr></table></figure>
 <p><strong>Solution:</strong></p>
-<figure class="highlight sas"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="meta">x</span> =<span class="meta"> int(</span>i<span class="meta">nput(</span>))</span><br><span class="line">    y =<span class="meta"> int(</span>i<span class="meta">nput(</span>))</span><br><span class="line">    z =<span class="meta"> int(</span>i<span class="meta">nput(</span>))</span><br><span class="line">    n =<span class="meta"> int(</span>i<span class="meta">nput(</span>))</span><br><span class="line">p<span class="meta">rint(</span>[[i,j,k] </span><br><span class="line">for i <span class="meta">in</span><span class="meta"> range(</span><span class="meta">x</span>+1) </span><br><span class="line">for j <span class="meta">in</span><span class="meta"> range(</span>y+1) </span><br><span class="line">for k <span class="meta">in</span><span class="meta"> range(</span>z+1) </span><br><span class="line"><span class="meta">if</span> ( ( i + j+k )!=n)])</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    x = int(input())</span><br><span class="line">    y = int(input())</span><br><span class="line">    z = int(input())</span><br><span class="line">    n = int(input())</span><br><span class="line">print([[i,j,k] </span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(x+<span class="number">1</span>) </span><br><span class="line"><span class="keyword">for</span> j <span class="keyword">in</span> range(y+<span class="number">1</span>) </span><br><span class="line"><span class="keyword">for</span> k <span class="keyword">in</span> range(z+<span class="number">1</span>) </span><br><span class="line"><span class="keyword">if</span> ( ( i + j+k )!=n)])</span><br></pre></td></tr></table></figure>
       
       <!-- reward -->
       
@@ -210,7 +212,7 @@ ga('send', 'pageview');
   
   <nav class="article-nav">
     
-      <a href="/2020/07/02/etcode-Problem-Set/" class="article-nav-link">
+      <a href="/2020/07/02/Leetcode-Problem-Set/" class="article-nav-link">
         <strong class="article-nav-caption">Previous</strong>
         <div class="article-nav-title">
           

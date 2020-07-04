@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tiamoyue.github.io/"/>
-  <updated>2020-07-02T04:21:38.942Z</updated>
+  <updated>2020-07-03T22:47:48.649Z</updated>
   <id>https://tiamoyue.github.io/</id>
   
   <author>
@@ -17,9 +17,59 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Statistical Learning(Rstudio)3-4</title>
+    <link href="https://tiamoyue.github.io/2020/07/03/tro-to-Statistical-Learning-Rstudio/"/>
+    <id>https://tiamoyue.github.io/2020/07/03/tro-to-Statistical-Learning-Rstudio/</id>
+    <published>2020-07-03T22:15:39.000Z</published>
+    <updated>2020-07-03T22:47:48.649Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Practice-3-Regression-Tree-Cross-Validation-Mallow-CP-BIC&quot;&gt;&lt;a href=&quot;#Practice-3-Regression-Tree-Cross-Validation-Mallow-CP-BIC&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Statistical Learning(Rstudio)1-2</title>
+    <link href="https://tiamoyue.github.io/2020/07/02/Intro-to-Statistical-Learning/"/>
+    <id>https://tiamoyue.github.io/2020/07/02/Intro-to-Statistical-Learning/</id>
+    <published>2020-07-02T18:53:00.000Z</published>
+    <updated>2020-07-03T22:46:30.975Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Practice-1-Data-Analysis&quot;&gt;&lt;a href=&quot;#Practice-1-Data-Analysis&quot; class=&quot;headerlink&quot; title=&quot;Practice 1: Data Analysis&quot;&gt;&lt;/a&gt;Practice 1: Data Analysis&lt;/h3&gt;
+
+	&lt;div class=&quot;row&quot;&gt;
+    &lt;embed src=&quot;\me\A1.pdf&quot; width=&quot;100%&quot; height=&quot;550&quot; type=&quot;application/pdf&quot;&gt;
+	&lt;/div&gt;
+    
+    </summary>
+    
+    
+      <category term="Project" scheme="https://tiamoyue.github.io/categories/Project/"/>
+    
+    
+      <category term="Rstudio" scheme="https://tiamoyue.github.io/tags/Rstudio/"/>
+    
+      <category term="Data Science" scheme="https://tiamoyue.github.io/tags/Data-Science/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Leetcode Problem Set</title>
-    <link href="https://tiamoyue.github.io/2020/07/02/etcode-Problem-Set/"/>
-    <id>https://tiamoyue.github.io/2020/07/02/etcode-Problem-Set/</id>
+    <link href="https://tiamoyue.github.io/2020/07/02/Leetcode-Problem-Set/"/>
+    <id>https://tiamoyue.github.io/2020/07/02/Leetcode-Problem-Set/</id>
     <published>2020-07-02T04:08:00.000Z</published>
     <updated>2020-07-02T04:21:38.942Z</updated>
     
@@ -31,9 +81,9 @@
       <category term="Leetcode" scheme="https://tiamoyue.github.io/categories/Leetcode/"/>
     
     
-      <category term="Python" scheme="https://tiamoyue.github.io/tags/Python/"/>
-    
       <category term="Code" scheme="https://tiamoyue.github.io/tags/Code/"/>
+    
+      <category term="Python" scheme="https://tiamoyue.github.io/tags/Python/"/>
     
   </entry>
   
@@ -42,17 +92,21 @@
     <link href="https://tiamoyue.github.io/2020/07/01/HackerRank-Python-Practice/"/>
     <id>https://tiamoyue.github.io/2020/07/01/HackerRank-Python-Practice/</id>
     <published>2020-07-01T22:09:00.000Z</published>
-    <updated>2020-07-02T04:19:55.582Z</updated>
+    <updated>2020-07-02T18:55:23.985Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h4 id=&quot;1-Write-Function&quot;&gt;&lt;a href=&quot;#1-Write-Function&quot; class=&quot;headerlink&quot; title=&quot;1. Write Function&quot;&gt;&lt;/a&gt;1. Write Function&lt;/h4&gt;&lt;p&gt;We add a
-        
-      
+      &lt;h4 id=&quot;1-Write-Function&quot;&gt;&lt;a href=&quot;#1-Write-Function&quot; class=&quot;headerlink&quot; title=&quot;1. Write Function&quot;&gt;&lt;/a&gt;1. Write Function&lt;/h4&gt;&lt;p&gt;We add a Leap Day on February 29, almost every four years. The leap day is an extra, or intercalary day and we add it to the shortest month of the year, February.&lt;br&gt;In the Gregorian calendar three criteria must be taken into account to identify leap years:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The year can be evenly divided by 4, is a leap year, unless:&lt;ul&gt;
+&lt;li&gt;The year can be evenly divided by 100, it is NOT a leap year, unless:&lt;ul&gt;
+&lt;li&gt;The year is also evenly divisible by 400. Then it is a leap year.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This means that in the Gregorian calendar, the years 2000 and 2400 are leap years, while 1800, 1900, 2100, 2200, 2300 and 2500 are NOT leap years.&lt;/p&gt;
     
     </summary>
     
@@ -60,9 +114,9 @@
       <category term="HackerRank" scheme="https://tiamoyue.github.io/categories/HackerRank/"/>
     
     
-      <category term="Python" scheme="https://tiamoyue.github.io/tags/Python/"/>
-    
       <category term="Code" scheme="https://tiamoyue.github.io/tags/Code/"/>
+    
+      <category term="Python" scheme="https://tiamoyue.github.io/tags/Python/"/>
     
   </entry>
   
@@ -71,18 +125,14 @@
     <link href="https://tiamoyue.github.io/2020/06/29/y-First-Data-Visulization/"/>
     <id>https://tiamoyue.github.io/2020/06/29/y-First-Data-Visulization/</id>
     <published>2020-06-29T20:55:00.000Z</published>
-    <updated>2020-07-01T22:07:22.558Z</updated>
+    <updated>2020-07-02T18:54:10.054Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;In 2017, I started my first coding practice by using R. Then, I realize that computer language is not rocketscience that I
-        
-      
+      &lt;blockquote&gt;
+&lt;p&gt;In 2017, I started my first coding practice by using R. Then, I realize that computer language is not rocketscience that I can’t never understand.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;Practice-1&quot;&gt;&lt;a href=&quot;#Practice-1&quot; class=&quot;headerlink&quot; title=&quot;Practice 1&quot;&gt;&lt;/a&gt;Practice 1&lt;/h3&gt;&lt;h4 id=&quot;The-potential-relationship-between-United-States-GDP-and-Some-other-economic-indicators-from-year-1960-to-2015&quot;&gt;&lt;a href=&quot;#The-potential-relationship-between-United-States-GDP-and-Some-other-economic-indicators-from-year-1960-to-2015&quot; class=&quot;headerlink&quot; title=&quot;The potential relationship between United States GDP and Some other economic indicators (from year 1960 to 2015)&quot;&gt;&lt;/a&gt;The potential relationship between United States GDP and Some other economic indicators (from year 1960 to 2015)&lt;/h4&gt;&lt;p&gt;　The data set pick for first practice is aimed to study the potential relationship between United States GDP and some other economic indicators such as population, exports of goods and service, electric power consumption, unemployment rate and average rate index from year 1960 to 2015. The source of data is from World Bank Open Data ( &lt;em&gt;&lt;a href=&quot;https://data.worldbank.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://data.worldbank.org&lt;/a&gt;&lt;/em&gt;) and National Average Wage Index (&lt;em&gt;&lt;a href=&quot;https://www.ssa.gov/oact/cola/AWI.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.ssa.gov/oact/cola/AWI.html&lt;/a&gt;.&lt;/em&gt;)&lt;br&gt;In order to find the relationship, I first need to find out the trend of indicators from 1960 to 2015 and make some logical assumptions in mind.&lt;/p&gt;
     
     </summary>
     
@@ -98,10 +148,10 @@
   
   <entry>
     <title>Quantitative Finance</title>
-    <link href="https://tiamoyue.github.io/2020/06/29/omputational-Finance/"/>
-    <id>https://tiamoyue.github.io/2020/06/29/omputational-Finance/</id>
+    <link href="https://tiamoyue.github.io/2020/06/29/Computational-Finance/"/>
+    <id>https://tiamoyue.github.io/2020/06/29/Computational-Finance/</id>
     <published>2020-06-29T16:39:00.000Z</published>
-    <updated>2020-06-29T19:26:36.820Z</updated>
+    <updated>2020-07-03T22:22:14.631Z</updated>
     
     <summary type="html">
     
@@ -119,21 +169,17 @@
   
   <entry>
     <title>Web-Mining Full Project Report</title>
-    <link href="https://tiamoyue.github.io/2020/06/26/eb-Mining-Full-Project-Report/"/>
-    <id>https://tiamoyue.github.io/2020/06/26/eb-Mining-Full-Project-Report/</id>
+    <link href="https://tiamoyue.github.io/2020/06/26/web-Mining-Full-Project-Report/"/>
+    <id>https://tiamoyue.github.io/2020/06/26/web-Mining-Full-Project-Report/</id>
     <published>2020-06-26T04:20:00.000Z</published>
-    <updated>2020-07-01T22:06:48.389Z</updated>
+    <updated>2020-07-02T18:55:41.802Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;In retrospect my first NLP project,it was a really great learning experience that got me through the process of nature
-        
-      
+      &lt;blockquote&gt;
+&lt;p&gt;In retrospect my first NLP project,it was a really great learning experience that got me through the process of nature language processing, and piqued my interest to the Data Science.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;Abstract&quot;&gt;&lt;a href=&quot;#Abstract&quot; class=&quot;headerlink&quot; title=&quot;Abstract&quot;&gt;&lt;/a&gt;Abstract&lt;/h3&gt;&lt;p&gt;　In the past one year, PUBG became one of the most popular games in the word and at the same time it also received thousands of negative comments and thus I planned to start a project to help those developers and operators extract valuable information from those critics. The purpose of my project is to get suggestions from those critics, and then I plan to assign labels for players manually to classify those clear-minded supporters and critics and then train some classification models to discover more critics with firm stand.Finally, I will propose some future improvements for this project which I could have done better and also as reference for my next project.&lt;/p&gt;
     
     </summary>
     
@@ -154,17 +200,14 @@
     <link href="https://tiamoyue.github.io/2020/06/04/Big%20Data/"/>
     <id>https://tiamoyue.github.io/2020/06/04/Big%20Data/</id>
     <published>2020-06-04T17:04:00.000Z</published>
-    <updated>2020-06-26T00:43:59.716Z</updated>
+    <updated>2020-07-02T18:55:57.965Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h3 id=&quot;Course-1-Introduction-to-Big-Data&quot;&gt;&lt;a href=&quot;#Course-1-Introduction-to-Big-Data&quot; class=&quot;headerlink&quot; title=&quot;Course 1 Introduction to
-        
-      
+      &lt;h3 id=&quot;Course-1-Introduction-to-Big-Data&quot;&gt;&lt;a href=&quot;#Course-1-Introduction-to-Big-Data&quot; class=&quot;headerlink&quot; title=&quot;Course 1 Introduction to Big Data&quot;&gt;&lt;/a&gt;Course 1 Introduction to Big Data&lt;/h3&gt;&lt;h4 id=&quot;Week-1&quot;&gt;&lt;a href=&quot;#Week-1&quot; class=&quot;headerlink&quot; title=&quot;Week 1&quot;&gt;&lt;/a&gt;Week 1&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;In-Situ analytical processing:&lt;/strong&gt; Bringing the computation to where data is located.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;SCADA(Supervisory Control and Data Acquisition)&lt;/strong&gt;&lt;br&gt;　　It is a type of industrial control system for remote monitoring and control of industrial processes that exists in the physical world, potentially including multiple sites, many types of sensors.In addition to monitoring and control, SCADA system can be used to define actions for reduced waste and improved efficiency in industrial processes,public or private infrastructure processes,facility processes.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
@@ -185,20 +228,21 @@
     <link href="https://tiamoyue.github.io/2020/06/04/My-second-post-to-test/"/>
     <id>https://tiamoyue.github.io/2020/06/04/My-second-post-to-test/</id>
     <published>2020-06-04T07:24:00.000Z</published>
-    <updated>2020-07-02T03:33:23.752Z</updated>
+    <updated>2020-07-02T18:56:35.551Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;This post only records the Tasks I made mistakes.&lt;/p&gt;
+      &lt;blockquote&gt;
+&lt;p&gt;This post only records the problems I made mistakes.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&quot;Intro-to-Conditional-Statements&quot;&gt;&lt;a
-        
-      
+&lt;h4 id=&quot;Intro-to-Conditional-Statements&quot;&gt;&lt;a href=&quot;#Intro-to-Conditional-Statements&quot; class=&quot;headerlink&quot; title=&quot;Intro to Conditional Statements&quot;&gt;&lt;/a&gt;Intro to Conditional Statements&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;Task:&lt;/strong&gt; Given an integer,n, perform the following conditional actions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If  is odd, print Weird&lt;/li&gt;
+&lt;li&gt;If  is even and in the inclusive range of  to , print Not Weird&lt;/li&gt;
+&lt;li&gt;If  is even and in the inclusive range of  to , print Weird&lt;/li&gt;
+&lt;li&gt;If  is even and greater than , print Not Weird&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Complete the stub code provided in your editor to print whether or not is weird.&lt;/p&gt;
     
     </summary>
     
@@ -219,17 +263,12 @@
     <link href="https://tiamoyue.github.io/2020/06/02/posttry-to-keep-my-website-runing/"/>
     <id>https://tiamoyue.github.io/2020/06/02/posttry-to-keep-my-website-runing/</id>
     <published>2020-06-03T03:16:00.000Z</published>
-    <updated>2020-06-26T04:21:12.429Z</updated>
+    <updated>2020-07-02T18:56:55.326Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h3 id=&quot;Task-1-Identifying-the-data-quality-issues-and-how-this-may-impact-our-analysis-going-forward&quot;&gt;&lt;a
-        
-      
+      &lt;h3 id=&quot;Task-1-Identifying-the-data-quality-issues-and-how-this-may-impact-our-analysis-going-forward&quot;&gt;&lt;a href=&quot;#Task-1-Identifying-the-data-quality-issues-and-how-this-may-impact-our-analysis-going-forward&quot; class=&quot;headerlink&quot; title=&quot;Task 1: Identifying the data quality issues and how this may impact our analysis going forward?&quot;&gt;&lt;/a&gt;Task 1: Identifying the data quality issues and how this may impact our analysis going forward?&lt;/h3&gt;&lt;p&gt;Since the company didn’t define its own business definition for data quality evaluation, I will follow the general process.(This task is intentionally solved by Python)&lt;/p&gt;
+&lt;p&gt;To evaluate the quality of data, we can follow the Six Standard Data Quality Dimension: &lt;/p&gt;
     
     </summary>
     

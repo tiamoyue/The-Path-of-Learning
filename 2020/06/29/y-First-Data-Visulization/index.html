@@ -128,6 +128,8 @@ ga('send', 'pageview');
 <p>In 2017, I started my first coding practice by using R. Then, I realize that computer language is not rocketscience that I can’t never understand.</p>
 </blockquote>
 <h3 id="Practice-1"><a href="#Practice-1" class="headerlink" title="Practice 1"></a>Practice 1</h3><h4 id="The-potential-relationship-between-United-States-GDP-and-Some-other-economic-indicators-from-year-1960-to-2015"><a href="#The-potential-relationship-between-United-States-GDP-and-Some-other-economic-indicators-from-year-1960-to-2015" class="headerlink" title="The potential relationship between United States GDP and Some other economic indicators (from year 1960 to 2015)"></a>The potential relationship between United States GDP and Some other economic indicators (from year 1960 to 2015)</h4><p>　The data set pick for first practice is aimed to study the potential relationship between United States GDP and some other economic indicators such as population, exports of goods and service, electric power consumption, unemployment rate and average rate index from year 1960 to 2015. The source of data is from World Bank Open Data ( <em><a href="https://data.worldbank.org" target="_blank" rel="noopener">https://data.worldbank.org</a></em>) and National Average Wage Index (<em><a href="https://www.ssa.gov/oact/cola/AWI.html" target="_blank" rel="noopener">https://www.ssa.gov/oact/cola/AWI.html</a>.</em>)<br>In order to find the relationship, I first need to find out the trend of indicators from 1960 to 2015 and make some logical assumptions in mind.</p>
+<a id="more"></a>
+
 <p><strong>Load library needed, read the excel file and rename the columns</strong></p>
 <pre><code>library(readxl)
 library(ggplot2)
@@ -279,7 +281,7 @@ ggplot(USA_GDP,aes(Year,House))+geom_line()</code></pre><p><img src="/images/pas
       </a>
     
     
-      <a href="/2020/06/29/omputational-Finance/" class="article-nav-link">
+      <a href="/2020/06/29/Computational-Finance/" class="article-nav-link">
         <strong class="article-nav-caption">Next</strong>
         <div class="article-nav-title">Quantitative Finance</div>
       </a>

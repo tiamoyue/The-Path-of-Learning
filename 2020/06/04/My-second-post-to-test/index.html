@@ -125,7 +125,7 @@ ga('send', 'pageview');
 
       
       <blockquote>
-<p>This post only records the Tasks I made mistakes.</p>
+<p>This post only records the problems I made mistakes.</p>
 </blockquote>
 <h4 id="Intro-to-Conditional-Statements"><a href="#Intro-to-Conditional-Statements" class="headerlink" title="Intro to Conditional Statements"></a>Intro to Conditional Statements</h4><p><strong>Task:</strong> Given an integer,n, perform the following conditional actions:</p>
 <ul>
@@ -134,7 +134,9 @@ ga('send', 'pageview');
 <li>If  is even and in the inclusive range of  to , print Weird</li>
 <li>If  is even and greater than , print Not Weird</li>
 </ul>
-<p>Complete the stub code provided in your editor to print whether or not  is weird.</p>
+<p>Complete the stub code provided in your editor to print whether or not is weird.</p>
+<a id="more"></a>
+
 <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">   n = int(input().strip())</span><br><span class="line">   <span class="keyword">if</span> n%<span class="attribute">2</span>==0 <span class="keyword">and</span> (n <span class="keyword">in</span> range (2,6) <span class="keyword">or</span> n&gt;20):</span><br><span class="line">   		<span class="builtin-name">print</span>(<span class="string">'Not Weird'</span>)</span><br><span class="line">   <span class="keyword">if</span> n%<span class="attribute">2</span>==1 <span class="keyword">or</span> (n%<span class="attribute">2</span>==0 <span class="keyword">and</span> (n <span class="keyword">in</span> range(6,21))):</span><br><span class="line">      <span class="builtin-name">print</span>(<span class="string">'Weird'</span>)</span><br></pre></td></tr></table></figure>
 <p><strong>Note:</strong> When think about the condition, we can simply catergorize the condition and try whether we can put them in one statement, which will make the codes cleaner.</p>
 <h4 id="Class-vs-Instance"><a href="#Class-vs-Instance" class="headerlink" title="Class vs. Instance"></a>Class vs. Instance</h4><p><strong>Task:</strong> Write a Person class with an instance variable,<strong><em>age</em> <em>*,and a constructor that takes an integer,</em></strong>initialAge<strong>* , as a parameter. The constructor must assign *</strong>initialAge<strong>* to <em>age</em> after confirming the argument passed as *</strong>initialAge<strong>* is not negative; if a negative argument is passed as *</strong>initialAge<strong>*, the constructor should set *</strong>age*** to 0 and print Age is not valid, setting age to 0.. In addition, you must write the following instance methods:</p>
