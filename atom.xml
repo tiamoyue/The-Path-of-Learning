@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tiamoyue.github.io/"/>
-  <updated>2020-07-06T23:41:19.741Z</updated>
+  <updated>2020-07-07T05:18:03.004Z</updated>
   <id>https://tiamoyue.github.io/</id>
   
   <author>
@@ -17,26 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Risk Management Concept</title>
-    <link href="https://tiamoyue.github.io/2020/07/06/Risk/"/>
-    <id>https://tiamoyue.github.io/2020/07/06/Risk/</id>
-    <published>2020-07-06T20:53:03.000Z</published>
-    <updated>2020-07-06T23:41:19.741Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>Bitcoin Price Factor Analysis</title>
     <link href="https://tiamoyue.github.io/2020/07/06/Bitcoin-Price-Factor-Analysis/"/>
     <id>https://tiamoyue.github.io/2020/07/06/Bitcoin-Price-Factor-Analysis/</id>
     <published>2020-07-06T18:09:00.000Z</published>
-    <updated>2020-07-06T23:54:16.617Z</updated>
+    <updated>2020-07-07T05:18:03.004Z</updated>
     
     <summary type="html">
     
@@ -51,7 +36,11 @@
       <category term="Project" scheme="https://tiamoyue.github.io/categories/Project/"/>
     
     
-      <category term="Rstudio, Statistic Bitcoin" scheme="https://tiamoyue.github.io/tags/Rstudio-Statistic-Bitcoin/"/>
+      <category term="Statistic" scheme="https://tiamoyue.github.io/tags/Statistic/"/>
+    
+      <category term="Time-Series" scheme="https://tiamoyue.github.io/tags/Time-Series/"/>
+    
+      <category term="Rstudio" scheme="https://tiamoyue.github.io/tags/Rstudio/"/>
     
   </entry>
   
@@ -60,7 +49,7 @@
     <link href="https://tiamoyue.github.io/2020/07/03/tro-to-Statistical-Learning-Rstudio/"/>
     <id>https://tiamoyue.github.io/2020/07/03/tro-to-Statistical-Learning-Rstudio/</id>
     <published>2020-07-03T22:15:00.000Z</published>
-    <updated>2020-07-06T23:40:17.424Z</updated>
+    <updated>2020-07-07T05:18:51.465Z</updated>
     
     <summary type="html">
     
@@ -76,7 +65,11 @@
       <category term="Project" scheme="https://tiamoyue.github.io/categories/Project/"/>
     
     
-      <category term="Statistic, Rstudio, Data Science" scheme="https://tiamoyue.github.io/tags/Statistic-Rstudio-Data-Science/"/>
+      <category term="Statistic" scheme="https://tiamoyue.github.io/tags/Statistic/"/>
+    
+      <category term="Rstudio" scheme="https://tiamoyue.github.io/tags/Rstudio/"/>
+    
+      <category term="Data Science" scheme="https://tiamoyue.github.io/tags/Data-Science/"/>
     
   </entry>
   
@@ -101,11 +94,11 @@
       <category term="Project" scheme="https://tiamoyue.github.io/categories/Project/"/>
     
     
+      <category term="Statistic" scheme="https://tiamoyue.github.io/tags/Statistic/"/>
+    
       <category term="Rstudio" scheme="https://tiamoyue.github.io/tags/Rstudio/"/>
     
       <category term="Data Science" scheme="https://tiamoyue.github.io/tags/Data-Science/"/>
-    
-      <category term="Statistic" scheme="https://tiamoyue.github.io/tags/Statistic/"/>
     
   </entry>
   
@@ -186,27 +179,6 @@
       <category term="Tableau" scheme="https://tiamoyue.github.io/tags/Tableau/"/>
     
       <category term="Data analysis" scheme="https://tiamoyue.github.io/tags/Data-analysis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Quantitative Finance</title>
-    <link href="https://tiamoyue.github.io/2020/06/29/Computational-Finance/"/>
-    <id>https://tiamoyue.github.io/2020/06/29/Computational-Finance/</id>
-    <published>2020-06-29T16:39:00.000Z</published>
-    <updated>2020-07-03T22:22:14.631Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="Finance" scheme="https://tiamoyue.github.io/categories/Finance/"/>
-    
-    
-      <category term="Rstudio" scheme="https://tiamoyue.github.io/tags/Rstudio/"/>
-    
-      <category term="Quant" scheme="https://tiamoyue.github.io/tags/Quant/"/>
     
   </entry>
   
