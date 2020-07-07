@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8" />
+    
+  <meta name="description" content="Learning  &amp; Sharing" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    Bitcoin Price Factor Analysis |  Welcome To My Journey
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-168657504-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+
+  
+
+<link rel="alternate" href="/atom.xml" title="Welcome To My Journey" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
+</html>
+
+<body>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="app">
+    <main class="content on">
+      <section class="outer">
+  <article id="post-Bitcoin-Price-Factor-Analysis" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  Bitcoin Price Factor Analysis
+</h1>
+ 
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/07/06/Bitcoin-Price-Factor-Analysis/" class="article-date">
+  <time datetime="2020-07-06T18:09:00.000Z" itemprop="datePublished">2020-07-06</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Project/">Project</a>
+  </div>
+
+      
+      
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">2.7k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">16 min</span>
+        </span>
+    </span>
+</div>
+
+      
+    </div>
+    
+
+    
+    
+    <div class="tocbot"></div>
+
+
+
+
+
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+
+      
+      <blockquote>
+<p>Bitcoin analysis for fun.Typical time-series data analysis for reference.</p>
+</blockquote>
+<h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><p>　This paper mainly discusses the factors in the market that are going to influence the Bitcoin price. The Bitcoin price formula is derived from the Barro(1979) model which also provides the concept of selecting the market factors in the formula. Since Bitcoin is not a traditional currency, it is not appropriate to use the law of supply and demand to determine its value. By adding some other market factors, the formula will become more theoretically feasible. Time-series analytic mechanism will be applied in this project</p>
+<a id="more"></a>
+
+<h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p>　The booming cryptocurrency of recent years has always caught people’s attention. Various digital coins have emerged in the market and Bitcoin has become one of the most prominent of them because of its dramatic price rising and price volatility. Yet while many people are still confused about what is the Bitcoin, where does it come from and how does it work, Bitcoin has already shaken the financial world to its core.<br>The rising of Bitcoin is quite long and winding. In late 2008, a person or group whose name Satoshi Nakamoto released a white paper called Bitcoin – A Peer to Peer Electronic Cash system to explain the idea of cryptocurrency - It is a type of decentralized digital currency without a central bank or single administrator that can be sent from user to user. In 2010, the Bitcoin was first used to trade in the real world but there are still very few people know about it at that time. However, the price volatility of Bitcoin doom to make investors suffer from the big fall. Shortly after Bitcoin reached 1000 dollars in November 2013, the price rapidly dropped to around 300 dollars. Ever since then, the price has begun its long-run rising journey. The prosperous period of cryptocurrency is in 2017 when almost the entire cryptocurrency market reached its all-time high in December 2017. </p>
+<p>　Since Bitcoin is not issued by a government or certain bank, the macro-economic factor such as interest rate parity is not able to affect Bitcoin price, which means some standard economic theories cannot use to explain the formula of Bitcoin. <strong>Dyhrberg, A. H. (2016)</strong>, <strong>Buchholz, (2012)</strong> address that Bitcoin has shared some similar characteristics with gold and its price can be determined by the law of supply and demand in large extent. Because Bitcoin has such high price volatility, it is not enough by just applying supply and demand formula to the Bitcoin. There must exist some other factors that determine Bitcoin’s price. <strong>Barro (1979)</strong> has illustrated the way to determine the gold standard by using the law of supply and demand. Base on the Barro’s model (1979), we can derive a new estimable model by adding another market factor such as news post number on the Journal website. We apply the time-series mechanism to analyze the daily data we have selected from January 01, 2012 to January 01, 2019 and come up with the conclusion about the factors that do have a significant impact on Bitcoin price. Our study will give other people or investors an insight into the way that how those factors affect Bitcoin price, which will give them more references and help them make decisions while they are investing Bitcoin.</p>
+<h3 id="Literature-Review"><a href="#Literature-Review" class="headerlink" title="Literature Review"></a>Literature Review</h3><p>　In 1979, Barro published the outstanding paper <strong><em>Money and The Price Level Under the Gold Standard</em></strong>. The paper specifies how price level is being evaluated in commodity goods. The level of price is determinate by the analyses based on supply and demand. The outcome of these analyses will convert gold into money currency, and gold production. Though the price of gold will fluctuate, it sets a fixed price for the commodity. The fixed price is determined by the quantity of the commodity in fiat currency. In order to come up with the absolute price level, many aspects were accounted for such as its major elements. Based on the concept of this paper, we can assume the price of Bitcoin will be affected by its supply and demand. Moreover, the supply includes the total stock of Bitcoin in circulation and exchange rate of Bitcoin, and the demand includes the size of the Bitcoin economy and the velocity of Bitcoin.</p>
+<p><strong><em>Multivariate Time Series Analysis</em></strong>, written by <strong>Ruey S. Tsay</strong>, summarizes the basic concepts and ideas of multivariate time series, gives econometric models and statistical models for describing the dynamic relationship between variables, discusses the discernibility problems that arise when the model is too flexible and introduces the search for hidden The method of simplifying the structure in multidimensional time series emphasizes the applicability and limitations of the multivariate time series method. It first gives some basic concepts of multivariate time series including evaluation and quantification of time and cross-section dependencies. As the data dimension increases, the difficulty of presenting multivariate data is also significantly increased. Then it introduces the vector autoregression model which is most widely used in the multi-time series analysis. Then it introduces unit root non-stationarity and cointegration. It includes the basic theory of understanding the unit root time series and some related applications.</p>
+<h3 id="Methodology"><a href="#Methodology" class="headerlink" title="Methodology"></a>Methodology</h3><p>　As mentioned above, the concept of Bitcoin formula is based on Barro’s model. Then, the equilibrium Bitcoin price formula can be addressed as follow:<br>The supply of Bitcoin is fixed and determines the units of Bitcoin circulated in the market. Let <strong>𝐵𝑠</strong> represent the total money supply of Bitcoin, <strong>P</strong> represents Bitcoin price, and <strong>T</strong> represents the total stock of Bitcoin. We will have total money supply formula: $$𝐵^𝑠 = 𝑃𝑇$$<br>The demand of Bitcoin, <strong>𝐵𝑑</strong>, can be mainly determined by the size of Bitcoin economy, <strong>E</strong>, the days that user holding the Bitcoin, in other words, the frequency of per Bitcoin circulated in the market (days destroyed), <strong>F</strong>, and the general price level, <strong>𝑃𝑖</strong>. $$𝐵^𝑑 = \frac{𝑃𝑖𝐸}{𝐹}$$<br>　<br> The scale of the Bitcoin economy can be determined by daily trading activities. Thus, the number of Bitcoin transactions and addresses are what we use as our variables. For general price level <strong>𝑃𝑖</strong>, we apply the exchange rate between the U.S dollar and European pound as an index in the formula because our study only focuses on the U.S market. The main currency that purchases Bitcoin is U.S dollar, and if there is any appreciation or depreciation of U.S dollar against European pound; the purchasing power of U.S dollar against Bitcoin would be affected.</p>
+<p>Combine the supply and demand formula we have equilibrium price formula: $$𝑃= \frac{𝑃𝑖𝐸}{𝐹𝑇}$$<br>we can rewrite the equilibrium formula as an empirical model to investigate the relationship between each variable:</p>
+<p>$$𝑃_𝑡=𝛽_0+ 𝛽1𝑃𝑖_𝑡+𝛽_2𝐸_𝑡+𝛽_3𝐹_𝑡+𝛽_4𝑇_𝑡+𝜀$$<br>Bitcoin is not like any other traditional currency that controlled or issued by the government. It is not well-known to the public. The more exposure of Bitcoin, the more people will be attracted to the Bitcoin. Furthermore, if people can easily access the information they need, the search cost will be significantly reduced, which will possibly increase the investment opportunity of Bitcoin, hence increase Bitcoin price. Therefrom, we can assume the media is one of the most important factors that can influence Bitcoin price since it can easily catch people’s attention and influence people’s investment decisions. In order to make the model in line with the real world, we add one more factor that would possibly affect Bitcoin price. Here we add the Wall Street Journal’s daily news post number:<br>$$𝑃_𝑡=𝛽_0+ 𝛽1𝑃𝑖_𝑡+𝛽_2𝐸_𝑡+𝛽_3𝐹_𝑡+𝛽_4𝑇_𝑡+𝛽_5𝑁𝑒𝑤𝑠_𝑡+𝜀$$</p>
+<p>　The mechanisms we use in this project are pretty straight forward. Consider the situation that variables in the formula may present the issue of endogeneity, we will use time-series analytic tools to test the properties of data step by step. Then we can figure out how those factors affect Bitcoin price by using the VAR and VEC model.</p>
+<p>　In the first step, we need to do the stationary test before we do the regression, otherwise, the data will lead to spurious regression. We will use the <strong>Augmented Dickey-Fuller (ADF)</strong> to test the stationarity of all data. After the test, we can decide whether we should differentiate our data. By observing the price of Bitcoin in the whole period, we found that there are some structural breaks, which might lead to huge forecasting errors and unreliability of the model in general. And we can use the <strong>Zivot-Andrews (ZA) test</strong> to determine the accurate position of structure break statistically.</p>
+<p>　In the second step, we apply the <strong>Johansen cointegration test</strong> to determine the cointegration relationship. Cointegration test allows us to describe the stationary relationship between two or more series. For each sequence alone, it may be non-stationary. The moments of these sequences, such as mean, variance or covariance, change over time, while the linear combination of these time series may have properties that do not change with time. These linear combinations could have a stable long-term relationship.</p>
+<p>　After doing the test above, we can decide whether we should use VAR or VEC model in our project.Vector autoregression is a stochastic process model used to capture the linear interdependencies among multiple time series. VAR model turns every system internal variable into a lagged variable to create the model.<br> $$\Delta{y_t} =\sum_{i=1}^{p−i}\Phi_{𝑖}𝑦_{𝑡−𝑖}+𝜀_𝑡，𝑡=1,2,…,𝑇$$</p>
+<p>　In this equation, $𝑦_𝑡$ is K dimension variable, P is lagged order, T is sample size, K*K dimension matrix is a coefficient to be estimated. The goal of the cointegration test is to determine the cointegration relationship in multiple time series.</p>
+<p>　Consider we have a VAR(p) model with tendency term, $$y_t=c(t)+ \sum_{i=1}^{p}\Gamma_{i}𝑦_{t−i}+ 𝜀_𝑡$$</p>
+<p>$c(t)=+c_0 + c_1t$, $c_i$ is a constant term. This VAR(p) model can be rewritten as ECM as follow:<br>$$\Delta{y_t} =c(t)+c_0 + c_1t+ \Pi_{y_{t-i}}+ \sum_{i=1}^{p}\Gamma_{i}^\ast\nabla𝑦_{𝑡−𝑖}+𝜀_𝑡$$</p>
+<p>Let the order of matrix $\Pi$ be m, we have two situations:</p>
+<p>1) Rank($\Pi$)=0, means none cointegration vectors. In this situation, $𝑦_𝑡$ have k unit roots. It becomes a VAR($p-1$) model.<br>2) Rank($\Pi$)=𝑚&gt;0, In this situation, $𝑦_𝑡$ have m cointegration vectors and k-m unit roots. So, there are k*m non-singular matrixs 𝛼 and 𝛽,<br>$$\Pi=\alpha\beta’$$</p>
+<p>Vectors 𝜔𝑡=𝛽′$𝑦_𝑡$ is a I(0) process, called cointegration sequence, and 𝛼 represents how the cointegration sequence influence $\Delta{y_t}$.<br>Putting the cointegration test and ECM together, we have a VEC model. This model can be regarded as a VAR model with cointegrated restriction.</p>
+<p>$$\Delta{y_t} =\alpha\beta{y_{t-1}} + \sum_{i=1}^{p−i}\Gamma_{𝑖}\Delta{𝑦_{𝑡−𝑖}}+𝜀_𝑡，𝑡=1,2,…,𝑇$$<br>It includes the regression speed of Alpha that diverged from long term equilibrium. Beta is error correction represents the long-term relationship. The coefficients of the differential terms reflect their short-term relationship. We can delete the insignificant lagged differential term.</p>
+<p> In our article, we will calculate the β𝑦𝑡−1 which is error correction term 𝑒𝑐𝑚𝑡−1 by using the Johansen cointegration test and calculate all other parameters $\Gamma_i$ by applying the VEC algorithm.<br>Finally, we analyze matrix β to know the long-run relationship between Bitcoin price and other variables and then use variance decomposition to analyze the short-run effect and the proportion of each variable in the regression.</p>
+<h3 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h3><h4 id="Augmented-Dickey-Fuller-Test-for-unit-root"><a href="#Augmented-Dickey-Fuller-Test-for-unit-root" class="headerlink" title="Augmented Dickey-Fuller Test for unit root"></a>Augmented Dickey-Fuller Test for unit root</h4><p><img src="/images/pasted-50.png" alt="upload successful"><br>　According to the price chart of Bitcoin above, we can see that the price trend in one period is obviously different from the others, and we build a hypothesis that there is a structural break in this period. From the plot, we estimate the structural break begins at 2017/04/01. Then we use the Augmented Dickey-Fuller (ADF) Test for unit root and split the data into three sections: the first section is the whole period; the second section is from 2012/01/01 to 2017/11/16; the third section is from 2017/11/16 to 2019/01/01.</p>
+<p><img src="/images/pasted-51.png" alt="upload successful"><br>　All the p-values are quite large, which means that the data is not stationary. Then we need to perform a differential treatment and then observe the stationarity of the data further.</p>
+<p><img src="/images/pasted-52.png" alt="upload successful"><br>　After the first derivative, the p-values are significant, which means the data are basically stationary so that we can conduct further study on the data.</p>
+<h4 id="Zivot-Andrews-Unit-Root-Test"><a href="#Zivot-Andrews-Unit-Root-Test" class="headerlink" title="Zivot-Andrews Unit-Root Test"></a>Zivot-Andrews Unit-Root Test</h4><p>　Through the Zivot-Andrews Test, we can statistically find the exact date of the structural break so that we can split the data into two periods to do analysis. We can observe two clearly different periods of Bitcoin market: before 2017/11/16 and after this breakpoint.</p>
+<p><img src="/images/pasted-53.png" alt="upload successful"></p>
+<h4 id="Johansen-Cointegration-Test"><a href="#Johansen-Cointegration-Test" class="headerlink" title="Johansen Cointegration Test"></a>Johansen Cointegration Test</h4><p>　Through the unit root test above, we can know that there are seven groups of data that are integrated of the same order I(1). Then we will use these groups of data to find the long-term equilibrium relationship between each other and use the cointegration test to judge the regression model in the next steps. For the data without cointegration, we use the VAR model for regression. For the data with cointegration, we use the VEC model for regression.In the Johansen test, we also need to determine the lag values, which we can obtain by using the AIC criterion. Since there are trace and eigenvalue two types of cointegration test, by comparing the statistical numbers of Johansen test with the critical value given in 1% critical value, we can obtain the number of cointegration relationship in each data combination.</p>
+<p><img src="/images/pasted-55.png" alt="upload successful"></p>
+<h4 id="Vector-Error-Correction-VEC-Model"><a href="#Vector-Error-Correction-VEC-Model" class="headerlink" title="Vector Error Correction (VEC) Model"></a>Vector Error Correction (VEC) Model</h4><p>　This model will help us find the long-term equilibrium relationship among those data combinations that have cointegration relationships. Through the above tests, we can know that the data are with cointegration. Therefore, we use the VEC model for regression to find out the long-term equilibrium relationship between combination groups with cointegration.</p>
+<p><img src="/images/pasted-54.png" alt="upload successful"><br>　We can know from the result that we obtain from VEC: regardless of Period 1 or Period 2, the number of Bitcoin has a little long-term impact on Bitcoin price. In Period 1, the number of transactions has a negative impact on Bitcoin price in the long run, which means that when the number of transactions increases, the Bitcoin price drops. Since the number of addresses and that of transactions represent the same kind of influence, they should have the same influence on the Bitcoin price in the data. In terms of two periods, the number of transactions always has a negative impact, and the impact of the number of addresses is not significant. For the exchange rate, the performance in Period 1 is not the same as our previous assumption. While the exchange rate increases, the Bitcoin price decreases, which means it has a negative influence. In Period 2, the influence of exchange rate becomes positive. On the other side, the Bitcoin price in the second stage can be reflected as unreasonable and deviates from the normal value. For the days destroyed, thigs become the opposite: in Period 1, days destroyed has a positive impact on the Bitcoin price. The number of news posts is an indicator used to measure the trends of investors’ behavior in the market. In the hypothesis, the more news posts about Bitcoin, the more investors pay close attention to Bitcoin, which means the number of news posts should have a positive impact on Bitcoin price. From the long-term relationship, we can see that this effect does exist.</p>
+<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p>　In the long run, the number of Bitcoin has no significant impact on Bitcoin price while other variables do. The exchange rate and days destroyed have the influence as our expectations. One has a positive impact and the other has a negative impact. The number of news posts always has a positive impact on Bitcoin price. In the short run, the impacts of all variables are all trivial. The factors have lag impacts on Bitcoin price. They will continuously incline over time, except the number of news posts which will reach its highest point, then decline.</p>
+
+      
+      <!-- reward -->
+      
+    </div>
+    
+    
+      <!-- copyright -->
+      
+        <div class="declare">
+          <ul class="post-copyright">
+            <li>
+              <i class="ri-copyright-line"></i>
+              <strong>Copyright： </strong>
+              Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+            </li>
+          </ul>
+        </div>
+        
+    <footer class="article-footer">
+      
+          
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        Share
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://tiamoyue.github.io/2020/07/06/Bitcoin-Price-Factor-Analysis/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Rstudio-Statistic-Bitcoin/" rel="tag">Rstudio, Statistic Bitcoin</a></li></ul>
+
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/07/06/Risk/" class="article-nav-link">
+        <strong class="article-nav-caption">Previous</strong>
+        <div class="article-nav-title">
+          
+            Risk Management Concept
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/07/03/tro-to-Statistical-Learning-Rstudio/" class="article-nav-link">
+        <strong class="article-nav-caption">Next</strong>
+        <div class="article-nav-title">Statistical Learning(Rstudio)3-4</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+  
+<!-- valine评论 -->
+<div id="vcomments-box">
+    <div id="vcomments">
+    </div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        app_id: 'NCmDEwbOJzlaPQqMzDgIjHfn-gzGzoHsz',
+        app_key: '7cEkjaT3X1Qfd2WEOhj8Aa1p',
+        path: window.location.pathname,
+        notify: false,
+        verify: false,
+        avatar: 'monsterid',
+        placeholder: 'Hi, maybe leave some of your footprints on my article  ╮(╯▽╰)╭',
+        recordIP: true
+    });
+    const infoEle = document.querySelector('#vcomments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+        infoEle.childNodes.forEach(function (item) {
+            item.parentNode.removeChild(item);
+        });
+    }
+</script>
+<style>
+    #vcomments-box {
+        padding: 5px 30px;
+    }
+
+    @media screen and (max-width: 800px) {
+        #vcomments-box {
+            padding: 5px 0px;
+        }
+    }
+
+    #vcomments-box #vcomments {
+        background-color: #fff;
+    }
+
+    .v .vlist .vcard .vh {
+        padding-right: 20px;
+    }
+
+    .v .vlist .vcard {
+        padding-left: 10px;
+    }
+</style>
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2020
+        <i class="ri-heart-fill heart_icon"></i> By Yang Yue
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        Powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+        <span class="division">|</span>
+        Theme - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/cat.jpg" alt="Welcome To My Journey"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">Home</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">Archive</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">Category</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/journey">Journey</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/me">About Me</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯奶茶吧~</p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Subtitle -->
+
+<script>
+  try {
+    var typed = new Typed("#subtitle", {
+      strings: ['No Matter What Happened To You', 'You Are Not Your Past', ''],
+      startDelay: 0,
+      typeSpeed: 100,
+      loop: true,
+      backSpeed: 50,
+      showCursor: true
+    });
+  } catch (err) {
+    console.log(err)
+  }
+</script>
+
+<!-- Tocbot -->
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true
+  }
+</script>
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+
+<script src="/js/clickLove.js"></script>
+
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+<script src="/js/dz.js"></script>
+
+
+
+    
+    
+    
+      
+  </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+
+</html>

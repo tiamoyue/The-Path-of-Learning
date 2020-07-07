@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tiamoyue.github.io/"/>
-  <updated>2020-07-03T22:47:48.649Z</updated>
+  <updated>2020-07-06T23:41:19.741Z</updated>
   <id>https://tiamoyue.github.io/</id>
   
   <author>
@@ -17,21 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Statistical Learning(Rstudio)3-4</title>
-    <link href="https://tiamoyue.github.io/2020/07/03/tro-to-Statistical-Learning-Rstudio/"/>
-    <id>https://tiamoyue.github.io/2020/07/03/tro-to-Statistical-Learning-Rstudio/</id>
-    <published>2020-07-03T22:15:39.000Z</published>
-    <updated>2020-07-03T22:47:48.649Z</updated>
+    <title>Risk Management Concept</title>
+    <link href="https://tiamoyue.github.io/2020/07/06/Risk/"/>
+    <id>https://tiamoyue.github.io/2020/07/06/Risk/</id>
+    <published>2020-07-06T20:53:03.000Z</published>
+    <updated>2020-07-06T23:41:19.741Z</updated>
     
     <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;Practice-3-Regression-Tree-Cross-Validation-Mallow-CP-BIC&quot;&gt;&lt;a href=&quot;#Practice-3-Regression-Tree-Cross-Validation-Mallow-CP-BIC&quot;
-        
-      
     
     </summary>
     
@@ -40,11 +32,60 @@
   </entry>
   
   <entry>
+    <title>Bitcoin Price Factor Analysis</title>
+    <link href="https://tiamoyue.github.io/2020/07/06/Bitcoin-Price-Factor-Analysis/"/>
+    <id>https://tiamoyue.github.io/2020/07/06/Bitcoin-Price-Factor-Analysis/</id>
+    <published>2020-07-06T18:09:00.000Z</published>
+    <updated>2020-07-06T23:54:16.617Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Bitcoin analysis for fun.Typical time-series data analysis for reference.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;Abstract&quot;&gt;&lt;a href=&quot;#Abstract&quot; class=&quot;headerlink&quot; title=&quot;Abstract&quot;&gt;&lt;/a&gt;Abstract&lt;/h3&gt;&lt;p&gt;　This paper mainly discusses the factors in the market that are going to influence the Bitcoin price. The Bitcoin price formula is derived from the Barro(1979) model which also provides the concept of selecting the market factors in the formula. Since Bitcoin is not a traditional currency, it is not appropriate to use the law of supply and demand to determine its value. By adding some other market factors, the formula will become more theoretically feasible. Time-series analytic mechanism will be applied in this project&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Project" scheme="https://tiamoyue.github.io/categories/Project/"/>
+    
+    
+      <category term="Rstudio, Statistic Bitcoin" scheme="https://tiamoyue.github.io/tags/Rstudio-Statistic-Bitcoin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Statistical Learning(Rstudio)3-4</title>
+    <link href="https://tiamoyue.github.io/2020/07/03/tro-to-Statistical-Learning-Rstudio/"/>
+    <id>https://tiamoyue.github.io/2020/07/03/tro-to-Statistical-Learning-Rstudio/</id>
+    <published>2020-07-03T22:15:00.000Z</published>
+    <updated>2020-07-06T23:40:17.424Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Practice-3-Regression-Tree-Cross-Validation-Mallow-CP-BIC&quot;&gt;&lt;a href=&quot;#Practice-3-Regression-Tree-Cross-Validation-Mallow-CP-BIC&quot; class=&quot;headerlink&quot; title=&quot;Practice 3 - Regression Tree, Cross-Validation,Mallow CP, BIC&quot;&gt;&lt;/a&gt;Practice 3 - Regression Tree, Cross-Validation,Mallow CP, BIC&lt;/h3&gt;
+
+	&lt;div class=&quot;row&quot;&gt;
+    &lt;embed src=&quot;\me\H3.pdf&quot; width=&quot;100%&quot; height=&quot;550&quot; type=&quot;application/pdf&quot;&gt;
+	&lt;/div&gt;
+    
+    </summary>
+    
+    
+      <category term="Project" scheme="https://tiamoyue.github.io/categories/Project/"/>
+    
+    
+      <category term="Statistic, Rstudio, Data Science" scheme="https://tiamoyue.github.io/tags/Statistic-Rstudio-Data-Science/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Statistical Learning(Rstudio)1-2</title>
     <link href="https://tiamoyue.github.io/2020/07/02/Intro-to-Statistical-Learning/"/>
     <id>https://tiamoyue.github.io/2020/07/02/Intro-to-Statistical-Learning/</id>
     <published>2020-07-02T18:53:00.000Z</published>
-    <updated>2020-07-03T22:46:30.975Z</updated>
+    <updated>2020-07-06T23:40:35.526Z</updated>
     
     <summary type="html">
     
@@ -63,6 +104,8 @@
       <category term="Rstudio" scheme="https://tiamoyue.github.io/tags/Rstudio/"/>
     
       <category term="Data Science" scheme="https://tiamoyue.github.io/tags/Data-Science/"/>
+    
+      <category term="Statistic" scheme="https://tiamoyue.github.io/tags/Statistic/"/>
     
   </entry>
   
@@ -92,7 +135,7 @@
     <link href="https://tiamoyue.github.io/2020/07/01/HackerRank-Python-Practice/"/>
     <id>https://tiamoyue.github.io/2020/07/01/HackerRank-Python-Practice/</id>
     <published>2020-07-01T22:09:00.000Z</published>
-    <updated>2020-07-02T18:55:23.985Z</updated>
+    <updated>2020-07-06T18:57:54.660Z</updated>
     
     <summary type="html">
     
@@ -125,7 +168,7 @@
     <link href="https://tiamoyue.github.io/2020/06/29/y-First-Data-Visulization/"/>
     <id>https://tiamoyue.github.io/2020/06/29/y-First-Data-Visulization/</id>
     <published>2020-06-29T20:55:00.000Z</published>
-    <updated>2020-07-02T18:54:10.054Z</updated>
+    <updated>2020-07-06T23:55:31.294Z</updated>
     
     <summary type="html">
     
