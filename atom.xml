@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tiamoyue.github.io/"/>
-  <updated>2020-07-07T05:18:03.004Z</updated>
+  <updated>2020-07-14T04:01:32.865Z</updated>
   <id>https://tiamoyue.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Quantium Virtual Internship </title>
+    <link href="https://tiamoyue.github.io/2020/07/13/uantium-Virtual-Internship/"/>
+    <id>https://tiamoyue.github.io/2020/07/13/uantium-Virtual-Internship/</id>
+    <published>2020-07-14T02:15:47.000Z</published>
+    <updated>2020-07-14T04:01:32.865Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;We bring expertise in two core domains to make the most of opportunities in the ‘big data world’–
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Bitcoin Price Factor Analysis</title>
@@ -270,28 +294,6 @@
       <category term="HackerRank" scheme="https://tiamoyue.github.io/tags/HackerRank/"/>
     
       <category term="30 Days Python" scheme="https://tiamoyue.github.io/tags/30-Days-Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>KPMG Vitrual Internship Notes</title>
-    <link href="https://tiamoyue.github.io/2020/06/02/posttry-to-keep-my-website-runing/"/>
-    <id>https://tiamoyue.github.io/2020/06/02/posttry-to-keep-my-website-runing/</id>
-    <published>2020-06-03T03:16:00.000Z</published>
-    <updated>2020-07-02T18:56:55.326Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;Task-1-Identifying-the-data-quality-issues-and-how-this-may-impact-our-analysis-going-forward&quot;&gt;&lt;a href=&quot;#Task-1-Identifying-the-data-quality-issues-and-how-this-may-impact-our-analysis-going-forward&quot; class=&quot;headerlink&quot; title=&quot;Task 1: Identifying the data quality issues and how this may impact our analysis going forward?&quot;&gt;&lt;/a&gt;Task 1: Identifying the data quality issues and how this may impact our analysis going forward?&lt;/h3&gt;&lt;p&gt;Since the company didn’t define its own business definition for data quality evaluation, I will follow the general process.(This task is intentionally solved by Python)&lt;/p&gt;
-&lt;p&gt;To evaluate the quality of data, we can follow the Six Standard Data Quality Dimension: &lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Project Notes" scheme="https://tiamoyue.github.io/categories/Project-Notes/"/>
-    
-    
-      <category term="Vitrual Internship" scheme="https://tiamoyue.github.io/tags/Vitrual-Internship/"/>
     
   </entry>
   
