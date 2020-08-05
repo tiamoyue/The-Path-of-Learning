@@ -140,15 +140,32 @@ ga('send', 'pageview');
 <li>Deep dive into customer segments</li>
 <li>Derive extra features (pack size and brand name)and define metrics of interest to enable you to draw insights on who spends on chips and what drives spends for each customer segment</li>
 </ul>
-<h4 id="Process-Completed-by-Excel-and-Tableau"><a href="#Process-Completed-by-Excel-and-Tableau" class="headerlink" title="Process Completed by Excel and Tableau"></a>Process Completed by Excel and Tableau</h4><p><strong>Step 1</strong>: </p>
+<h4 id="Data-Cleaning-and-Fixing"><a href="#Data-Cleaning-and-Fixing" class="headerlink" title="Data Cleaning and Fixing"></a>Data Cleaning and Fixing</h4><p><strong>Step 1: Basic Checking and Editing by Excel</strong></p>
 <ul>
-<li><p>View the data in Excel and apply <strong>Filter</strong> to check the missing values in each columns – No missing values in the dataset.</p>
+<li><p>View the data in Excel and apply <strong>Filter</strong> to check the missing values in each columns – <strong>No missing values in the dataset</strong>.</p>
 </li>
-<li><p>Use <strong>short date formate</strong> to change date columns to normal expression. However, there are some outliers in the dataset,the card number 226000 only have two transaction in the whole dataset, so I decide to remove them.</p>
+<li><p>Use <strong>short date format</strong> to change date columns to normal date expression. However, there are some outliers in the dataset,the card number 226000 only have two transactions in the whole dataset, so I decide to remove them.</p>
 </li>
-<li><p>Load the data in Python to check </p>
+<li><p>By observing the product names using Filter, I find some similar names such as WW - Woolworths,CCs - Cheezels Cheese,Infzns - Infzions, NCC-Natural Chip - Natural Chip Company, RRD - Red Rock Deli, Smith - Smiths, Snbts- Sunbites, GrnWves - Grain Waves, which I decide to fix using Python for simplicity.</p>
+</li>
+<li><p>Load the data in Python for futher checking and operation.</p>
 </li>
 </ul>
+<p><strong>Step 2: Data Manipulation by Python</strong></p>
+<ol>
+<li>Loda the Transaction Data as <strong>Tdata</strong>, Load the purchase data as <strong>Pdata</strong> and try to merge two data as one,since Transaction Data and Purchase data share the same membership card column</li>
+</ol>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Tdata=pd.read_excel(<span class="string">r'C:\Users\Administrator\Desktop\QVI_transaction_data.xlsx'</span>)</span><br><span class="line">Pdata=pd.read_csv(<span class="string">r'C:\Users\Administrator\Desktop\QVI_purchase_behaviour.csv'</span>)</span><br><span class="line">data=Tdata.merge(Pdata,on= <span class="string">'LYLTY_CARD_NBR'</span>)</span><br><span class="line">data.info() <span class="comment"># By checking the info of data, we didn't find any strange in the dataset.</span></span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>Because we are focusing on chip category , we only want to keep the chip products. So let’s create a new dataframe for chip prodcut.</li>
+</ol>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Use str.contains to find the product name that contain the 'chip'. And Create a new dataframe for chips only.</span></span><br><span class="line">chipdata=data[data[<span class="string">'PROD_NAME'</span>].str.contains(<span class="string">'chip'</span>,<span class="keyword">case</span>=<span class="keyword">False</span>)] <span class="comment"># Case sensitive = False</span></span><br><span class="line">chipdata.reset_index(drop=<span class="keyword">True</span>,inplace=<span class="keyword">True</span>) <span class="comment"># If you don't want it saved as a column then drop = True, inplace= True(reassign the index)</span></span><br><span class="line"><span class="keyword">print</span>(chipdata.head())</span><br><span class="line">chipdata.duplicated().any()<span class="comment"># check duplicated data</span></span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>Fix the product names to make product name consistent</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Clean all the special character in the product name</span></span><br><span class="line">chipdata[<span class="string">'PROD_NAME'</span>] = chipdata[<span class="string">'PROD_NAME'</span>].str.replace(<span class="string">'\W'</span>, <span class="string">''</span>)</span><br><span class="line"><span class="comment"># Regular expression is the key point to understand the formula</span></span><br><span class="line"><span class="comment"># Replace all the name to standard format</span></span><br><span class="line">chipdata[<span class="string">'PROD_NAME'</span>]=chipdata[<span class="string">'PROD_NAME'</span>].replace(&#123;<span class="string">'WW'</span>: <span class="string">'Woolworths'</span>,<span class="string">'CCs'</span>:<span class="string">'Cheezels Cheese'</span>,<span class="string">'Infzns'</span>:<span class="string">'Infzions'</span>,<span class="string">'Natural Chip Co'</span>: <span class="string">'Natural Chip Company'</span>,<span class="string">'NCC'</span>:<span class="string">'Natural Chip Company'</span>,<span class="string">'RRD'</span> :<span class="string">'Red Rock Deli'</span>, <span class="string">'Smith'</span>:<span class="string">'Smiths'</span>,<span class="string">'Snbts'</span>:<span class="string">'Sunbites'</span>,<span class="string">'GrnWves'</span>:<span class="string">'Grain Waves'</span>&#125;,regex=<span class="literal">True</span>)</span><br><span class="line"><span class="comment"># check to see what product name we have </span></span><br><span class="line">chipdata[<span class="string">'PROD_NAME'</span>].unique()</span><br><span class="line"><span class="comment"># From the result we can see that we have some problem on Smithss</span></span><br><span class="line">chipdata[<span class="string">'PROD_NAME'</span>]=chipdata[<span class="string">'PROD_NAME'</span>].replace(&#123;<span class="string">'Smithsss'</span>:<span class="string">'Smiths'</span>&#125;,regex=<span class="literal">True</span>)</span><br><span class="line">chipdata[<span class="string">'PROD_NAME'</span>].unique()<span class="comment"># now it appears normall</span></span><br></pre></td></tr></table></figure>
+<p>Now the data is good for customer analysis.For simplicity, we can load the data into Tableau for visualization analysis</p>
+<h3 id="Customer-Analysis"><a href="#Customer-Analysis" class="headerlink" title="Customer Analysis"></a>Customer Analysis</h3><p>**Lets figure out several questions that may help us understand the customer behavior:</p>
 
       
       <!-- reward -->
@@ -864,6 +881,11 @@ ga('send', 'pageview');
   </article>
   
 
+  
+  <nav class="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next Page</a>
+  </nav>
   
 </section>
 </div>

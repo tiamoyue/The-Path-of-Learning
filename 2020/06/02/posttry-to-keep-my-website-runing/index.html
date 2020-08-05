@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8" />
+    
+  <meta name="description" content="Learning  &amp; Sharing" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    KPMG Vitrual Internship Notes |  Welcome To My Journey
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-168657504-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+
+  
+
+<link rel="alternate" href="/atom.xml" title="Welcome To My Journey" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
+</html>
+
+<body>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="app">
+    <main class="content on">
+      <section class="outer">
+  <article id="post-posttry-to-keep-my-website-runing" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  KPMG Vitrual Internship Notes
+</h1>
+ 
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/06/02/posttry-to-keep-my-website-runing/" class="article-date">
+  <time datetime="2020-06-03T03:16:00.000Z" itemprop="datePublished">2020-06-02</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Project-Notes/">Project Notes</a>
+  </div>
+
+      
+      
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">925</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">5 min</span>
+        </span>
+    </span>
+</div>
+
+      
+    </div>
+    
+
+    
+    
+    <div class="tocbot"></div>
+
+
+
+
+
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+
+      
+      <h3 id="Task-1-Identifying-the-data-quality-issues-and-how-this-may-impact-our-analysis-going-forward"><a href="#Task-1-Identifying-the-data-quality-issues-and-how-this-may-impact-our-analysis-going-forward" class="headerlink" title="Task 1: Identifying the data quality issues and how this may impact our analysis going forward?"></a>Task 1: Identifying the data quality issues and how this may impact our analysis going forward?</h3><p>Since the company didn’t define its own business definition for data quality evaluation, I will follow the general process.</p>
+<p>To evaluate the quality of data, we can follow the Six Standard Data Quality Dimension: </p>
+<a id="more"></a>
+
+<ul>
+<li><strong>Accuracy</strong>: The degree to which the data correctly describe the ‘real-world’ objects. <strong>Example:</strong> <em>if a man is 30 years old, but the data is 35 years old.</em></li>
+<li><strong>Completeness</strong>: Whether the data fulfill the expectation of business comprehensiveness; in other words, whether you can extract the information you want from the data.</li>
+<li><strong>Uniqueness</strong>: Make sure there is no duplicate record in the dataset. <strong>Example</strong>: <em>There are 300 students in total, but there are 350 records</em></li>
+<li><strong>Timeliness</strong>：Make sure that the data is recorded at the time when it occurred. No delay.</li>
+<li><strong>Validity</strong>：Data are valid if it conforms to the syntax (format, type, range) of its definition.**</li>
+<li><strong>Consistency</strong>：The data should be the same as input in other columns.<strong>Example</strong>: <em>If a student name:’Peter Pan’ is in the class name-list, then ‘Peter Pan’in the school name-list should be the same as class name-list.</em> </li>
+</ul>
+<p><a href="https://www.whitepapers.em360tech.com/wp-content/files_mf/1407250286DAMAUKDQDimensionsWhitePaperR37.pdf" target="_blank" rel="noopener">Reference: Defining Data Quality Dimensions</a></p>
+<h4 id="Task-1-Problems-Procedures-and-Notes-Excel-and-Python"><a href="#Task-1-Problems-Procedures-and-Notes-Excel-and-Python" class="headerlink" title="Task 1 Problems,Procedures and Notes (Excel and Python)"></a>Task 1 Problems,Procedures and Notes (Excel and Python)</h4><h5 id="load-the-file-in-Python-and-check-the-sheets-in-file"><a href="#load-the-file-in-Python-and-check-the-sheets-in-file" class="headerlink" title="load the file in Python and check the sheets in file"></a>load the file in Python and check the sheets in file</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># load the necessary libraries</span></span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> xlrd</span><br><span class="line"><span class="keyword">import</span> xlwt</span><br><span class="line"><span class="keyword">import</span> datetime <span class="keyword">as</span> dt</span><br><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> date</span><br><span class="line"><span class="keyword">import</span> seaborn <span class="keyword">as</span> sns</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"><span class="comment"># Read the file and check the sheet names</span></span><br><span class="line">data=pd.ExcelFile(<span class="string">'C:/Users/Administrator/Desktop/KPMG_VI_New_raw_data_update_final.xlsx'</span>)</span><br><span class="line">names=data.sheet_names</span><br><span class="line">names</span><br><span class="line"></span><br><span class="line"><span class="comment"># Check the null values exisit in the sheets to deteremine whether will affect our analysis.</span></span><br><span class="line"><span class="keyword">for</span> name <span class="keyword">in</span> names:</span><br><span class="line">	null=data.parse(name).isnull().sum()</span><br><span class="line">   print(null)</span><br></pre></td></tr></table></figure>
+<ol>
+<li>After I observe through the summary of null values, I found the missing values have little impact on our dataset because we want to foucs on the customer that have the relativly big purchase power, we only need to make sure that the customer ID and list price are not null.</li>
+<li>And I also find four unnamed columns. By checking the function, lets define those columns. Unnamed 1: Random number between 40-110 Unnamed 2: If customer has car, then use random number times 1.25, otherwise times 1. Unnamed 3: If the property valuation bigger than 8 or past 3 years bike related purchases bigger than 80, then use number from Unnamed 2 times 1.25, otherwise times 1. Unnamed 4: If customer was considered as mass customer then use number from Unnamed 3 times 0.85, otherwise times 1.</li>
+<li>Not Sure what those indicator use for, I decide to leave blank.</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Now, lets merge the other sheets with Transaction data on Customer ID</span></span><br><span class="line"><span class="comment"># Note: pd.merge can only merge two dataframe.</span></span><br><span class="line">Tdata=data.parse(<span class="string">'Transactions'</span>) <span class="comment"># Read Transaction data</span></span><br><span class="line">Cdata=data.parse(<span class="string">'CustomerDemographic'</span>)</span><br><span class="line">Adata=data.parse(<span class="string">'CustomerAddress'</span>)</span><br><span class="line">data2=Tdata.merge(Cdata, on= <span class="string">'customer_id'</span>)</span><br><span class="line">data3=data2.merge(Adata, on= <span class="string">'customer_id'</span>)</span><br><span class="line"><span class="comment">## Delete all the rows tht contain the missing values and check the result</span></span><br><span class="line">data4=data3.dropna(how=<span class="string">'any'</span>)</span><br><span class="line">data4.isnull().sum()</span><br></pre></td></tr></table></figure>
+<h4 id="Task-2-We-want-to-evaluate-the-customer-value-to-determine-our-target-customer"><a href="#Task-2-We-want-to-evaluate-the-customer-value-to-determine-our-target-customer" class="headerlink" title="Task 2: We want to evaluate the customer value to determine our target customer"></a>Task 2: We want to evaluate the customer value to determine our target customer</h4><p><strong>Right here, we can apply the classic customer evaluation model – RFM model</strong></p>
+<ul>
+<li>I decide to add 12-31-2017 as comparision date for calculating the number of recency.</li>
+<li>Apply percentile to determine R score</li>
+<li>Adding the number of R score and M score as well as RFM score</li>
+<li>Create a RFM dataframe</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Calculate the number of days </span></span><br><span class="line">data4[<span class="string">'daydiff'</span>]=dt.datetime(<span class="number">2017</span>,<span class="number">12</span>,<span class="number">30</span>)- data4[<span class="string">'transaction_date'</span>] </span><br><span class="line"><span class="comment"># Use dt.days we can get int64 data type</span></span><br><span class="line">data4[<span class="string">'daydiff'</span>]=data4[<span class="string">'daydiff'</span>].dt.days </span><br><span class="line"></span><br><span class="line">recency=data4.groupby(<span class="string">'customer_id'</span>)[<span class="string">'daydiff'</span>].agg([(<span class="string">'recency'</span>,<span class="string">'min'</span>)])</span><br><span class="line">frequency=data4.groupby(<span class="string">'customer_id'</span>)[<span class="string">'transaction_id'</span>].agg([(<span class="string">'frequency'</span>,<span class="string">'count'</span>)])</span><br><span class="line">spend=data4.groupby(<span class="string">'customer_id'</span>)[<span class="string">'list_price'</span>].agg([(<span class="string">'total spend'</span>,<span class="string">'sum'</span>)])</span><br><span class="line">RFM = recency.join(frequency).join(spend)</span><br><span class="line">RFM.head()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Now, we can simply assign the R scores, F scores, and M scores to each customer </span></span><br><span class="line">according to the percentile <span class="keyword">and</span> classify our customers to four categories.</span><br><span class="line">rlabel=range(<span class="number">4</span>,<span class="number">0</span>,<span class="number">-1</span>)</span><br><span class="line">fmlabel=range(<span class="number">1</span>,<span class="number">5</span>)</span><br><span class="line">RFM[<span class="string">'R score'</span>]=pd.cut(RFM[<span class="string">'recency'</span>],[<span class="number">0</span>,<span class="number">18</span>,<span class="number">44</span>,<span class="number">87</span>,<span class="number">353</span>],labels=rlabel)</span><br><span class="line">RFM[<span class="string">'F score'</span>]=pd.cut(RFM[<span class="string">'frequency'</span>],[<span class="number">0</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">7</span>,<span class="number">14</span>],labels=fmlabel)</span><br><span class="line">RFM[<span class="string">'M score'</span>]=pd.cut(RFM[<span class="string">'total spend'</span>],[<span class="number">60</span>,<span class="number">4091</span>,<span class="number">5883</span>,<span class="number">8004</span>,<span class="number">19072</span>],labels=fmlabel)</span><br><span class="line"></span><br><span class="line"><span class="comment">### Assign the RFM value</span></span><br><span class="line"><span class="comment"># Right here we can add some weights to different score</span></span><br><span class="line"><span class="comment"># right here i got the error: “unsupported operand type(s) for *: 'Categorical' and 'float'”</span></span><br><span class="line"><span class="comment"># try to convert columns to float type data to solve this problem and doesn't work, So I change to for loop method.</span></span><br><span class="line"></span><br><span class="line">S=[]</span><br><span class="line"><span class="keyword">for</span> i,j,k <span class="keyword">in</span> zip(RFM[<span class="string">'R score'</span>],RFM[<span class="string">'F score'</span>],RFM[<span class="string">'M score'</span>]):</span><br><span class="line">    s=i*<span class="number">0.5</span>+j*<span class="number">0.8</span>+k</span><br><span class="line">    S.append(s)</span><br><span class="line"></span><br><span class="line">RFM[<span class="string">'RFM score'</span>]=S</span><br><span class="line">RFM.head()</span><br><span class="line"></span><br><span class="line"><span class="comment">## according to the RFM score distribution, we can label the customer</span></span><br><span class="line">print(RFM[<span class="string">'RFM score'</span>].describe())</span><br><span class="line">sns.distplot(RFM[<span class="string">'RFM score'</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># We can categorize our customer to four categroies according to the RFM score percentile.</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">rfm_level</span><span class="params">(df)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> df[<span class="string">'RFM score'</span>] &gt;= <span class="number">8</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'Can\'t Loose Them'</span></span><br><span class="line">    <span class="keyword">elif</span> ((df[<span class="string">'RFM score'</span>] &gt;= <span class="number">6</span>) <span class="keyword">and</span> (df[<span class="string">'RFM score'</span>] &lt; <span class="number">8</span>)):</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'Loyal'</span></span><br><span class="line">    <span class="keyword">elif</span> ((df[<span class="string">'RFM score'</span>] &gt;= <span class="number">4</span>) <span class="keyword">and</span> (df[<span class="string">'RFM score'</span>] &lt; <span class="number">6</span>)):</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'Promising'</span></span><br><span class="line">    <span class="keyword">elif</span> ((df[<span class="string">'RFM score'</span>] &gt;= <span class="number">2</span>) <span class="keyword">and</span> (df[<span class="string">'RFM score'</span>] &lt; <span class="number">4</span>)):</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'Needs Attention'</span></span><br><span class="line">RFM[<span class="string">'RFM level'</span>] = RFM.apply(rfm_level, axis=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Now we have well defined dataframe and we can load in to Tableau for further data visualization.</span></span><br><span class="line"></span><br><span class="line">data4.to_excel(<span class="string">'C:/Users/Administrator\Desktop/kpmgdatacustomer.xlsx'</span>)</span><br></pre></td></tr></table></figure>
+      
+      <!-- reward -->
+      
+    </div>
+    
+    
+      <!-- copyright -->
+      
+        <div class="declare">
+          <ul class="post-copyright">
+            <li>
+              <i class="ri-copyright-line"></i>
+              <strong>Copyright： </strong>
+              Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+            </li>
+          </ul>
+        </div>
+        
+    <footer class="article-footer">
+      
+          
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        Share
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://tiamoyue.github.io/2020/06/02/posttry-to-keep-my-website-runing/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vitrual-Internship/" rel="tag">Vitrual Internship</a></li></ul>
+
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/06/04/My-second-post-to-test/" class="article-nav-link">
+        <strong class="article-nav-caption">Previous</strong>
+        <div class="article-nav-title">
+          
+            HackerRank 30-days Python
+          
+        </div>
+      </a>
+    
+    
+  </nav>
+
+
+  
+
+  
+  
+<!-- valine评论 -->
+<div id="vcomments-box">
+    <div id="vcomments">
+    </div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        app_id: 'NCmDEwbOJzlaPQqMzDgIjHfn-gzGzoHsz',
+        app_key: '7cEkjaT3X1Qfd2WEOhj8Aa1p',
+        path: window.location.pathname,
+        notify: false,
+        verify: false,
+        avatar: 'monsterid',
+        placeholder: 'Hi, maybe leave some of your footprints on my article  ╮(╯▽╰)╭',
+        recordIP: true
+    });
+    const infoEle = document.querySelector('#vcomments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+        infoEle.childNodes.forEach(function (item) {
+            item.parentNode.removeChild(item);
+        });
+    }
+</script>
+<style>
+    #vcomments-box {
+        padding: 5px 30px;
+    }
+
+    @media screen and (max-width: 800px) {
+        #vcomments-box {
+            padding: 5px 0px;
+        }
+    }
+
+    #vcomments-box #vcomments {
+        background-color: #fff;
+    }
+
+    .v .vlist .vcard .vh {
+        padding-right: 20px;
+    }
+
+    .v .vlist .vcard {
+        padding-left: 10px;
+    }
+</style>
+
+  
+
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2020
+        <i class="ri-heart-fill heart_icon"></i> By Yang Yue
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        Powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+        <span class="division">|</span>
+        Theme - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/cat.jpg" alt="Welcome To My Journey"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">Home</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">Archive</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">Category</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/journey">Journey</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/me">About Me</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯奶茶吧~</p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Subtitle -->
+
+<script>
+  try {
+    var typed = new Typed("#subtitle", {
+      strings: ['No Matter What Happened To You', 'You Are Not Your Past', ''],
+      startDelay: 0,
+      typeSpeed: 100,
+      loop: true,
+      backSpeed: 50,
+      showCursor: true
+    });
+  } catch (err) {
+    console.log(err)
+  }
+</script>
+
+<!-- Tocbot -->
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true
+  }
+</script>
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+
+<script src="/js/clickLove.js"></script>
+
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+<script src="/js/dz.js"></script>
+
+
+
+    
+    
+    
+      
+  </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+
+</html>

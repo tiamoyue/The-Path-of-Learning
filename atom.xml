@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tiamoyue.github.io/"/>
-  <updated>2020-07-14T04:01:32.865Z</updated>
+  <updated>2020-07-24T02:26:38.143Z</updated>
   <id>https://tiamoyue.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tiamoyue.github.io/2020/07/13/uantium-Virtual-Internship/"/>
     <id>https://tiamoyue.github.io/2020/07/13/uantium-Virtual-Internship/</id>
     <published>2020-07-14T02:15:47.000Z</published>
-    <updated>2020-07-14T04:01:32.865Z</updated>
+    <updated>2020-07-24T02:26:38.143Z</updated>
     
     <summary type="html">
     
@@ -185,7 +185,7 @@
     <link href="https://tiamoyue.github.io/2020/06/29/y-First-Data-Visulization/"/>
     <id>https://tiamoyue.github.io/2020/06/29/y-First-Data-Visulization/</id>
     <published>2020-06-29T20:55:00.000Z</published>
-    <updated>2020-07-06T23:55:31.294Z</updated>
+    <updated>2020-08-05T01:14:08.417Z</updated>
     
     <summary type="html">
     
@@ -267,7 +267,7 @@
     <link href="https://tiamoyue.github.io/2020/06/04/My-second-post-to-test/"/>
     <id>https://tiamoyue.github.io/2020/06/04/My-second-post-to-test/</id>
     <published>2020-06-04T07:24:00.000Z</published>
-    <updated>2020-07-02T18:56:35.551Z</updated>
+    <updated>2020-08-05T01:16:10.975Z</updated>
     
     <summary type="html">
     
@@ -294,6 +294,28 @@
       <category term="HackerRank" scheme="https://tiamoyue.github.io/tags/HackerRank/"/>
     
       <category term="30 Days Python" scheme="https://tiamoyue.github.io/tags/30-Days-Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>KPMG Vitrual Internship Notes</title>
+    <link href="https://tiamoyue.github.io/2020/06/02/posttry-to-keep-my-website-runing/"/>
+    <id>https://tiamoyue.github.io/2020/06/02/posttry-to-keep-my-website-runing/</id>
+    <published>2020-06-03T03:16:00.000Z</published>
+    <updated>2020-08-05T01:09:55.467Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Task-1-Identifying-the-data-quality-issues-and-how-this-may-impact-our-analysis-going-forward&quot;&gt;&lt;a href=&quot;#Task-1-Identifying-the-data-quality-issues-and-how-this-may-impact-our-analysis-going-forward&quot; class=&quot;headerlink&quot; title=&quot;Task 1: Identifying the data quality issues and how this may impact our analysis going forward?&quot;&gt;&lt;/a&gt;Task 1: Identifying the data quality issues and how this may impact our analysis going forward?&lt;/h3&gt;&lt;p&gt;Since the company didn’t define its own business definition for data quality evaluation, I will follow the general process.&lt;/p&gt;
+&lt;p&gt;To evaluate the quality of data, we can follow the Six Standard Data Quality Dimension: &lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Project Notes" scheme="https://tiamoyue.github.io/categories/Project-Notes/"/>
+    
+    
+      <category term="Vitrual Internship" scheme="https://tiamoyue.github.io/tags/Vitrual-Internship/"/>
     
   </entry>
   
