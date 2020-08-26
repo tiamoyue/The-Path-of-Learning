@@ -92,6 +92,79 @@ ga('send', 'pageview');
     
     
     
+    <article id="post-posttry-to-keep-my-website-runing" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/08/02/posttry-to-keep-my-website-runing/"
+    >KPMG Vitrual Internship Notes</a> 
+</h2>
+ 
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/08/02/posttry-to-keep-my-website-runing/" class="article-date">
+  <time datetime="2020-08-03T03:16:00.000Z" itemprop="datePublished">2020-08-02</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Vitrual-Internship-Notes/">Vitrual Internship Notes</a>
+  </div>
+
+      
+      
+      
+    </div>
+    
+
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+
+      
+      <h3 id="Task-1-Identifying-the-data-quality-issues-and-how-this-may-impact-our-analysis-going-forward"><a href="#Task-1-Identifying-the-data-quality-issues-and-how-this-may-impact-our-analysis-going-forward" class="headerlink" title="Task 1: Identifying the data quality issues and how this may impact our analysis going forward?"></a>Task 1: Identifying the data quality issues and how this may impact our analysis going forward?</h3><p>Since the company didn’t define its own business definition for data quality evaluation, I will follow the general process.</p>
+<p>To evaluate the quality of data, we can follow the Six Standard Data Quality Dimension: </p>
+      
+      <a class="article-more-link" href="/2020/08/02/posttry-to-keep-my-website-runing/">Read More...</a>
+      
+      
+      <!-- reward -->
+      
+    </div>
+    
+    
+      <!-- copyright -->
+      
+    <footer class="article-footer">
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Project-Notes/" rel="tag">Project Notes</a></li></ul>
+
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+
+</article>
+    
     <article id="post-uantium-Virtual-Internship" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
@@ -101,7 +174,7 @@ ga('send', 'pageview');
        
 <h2 itemprop="name">
   <a class="article-title" href="/2020/07/13/uantium-Virtual-Internship/"
-    >Quantium Virtual Internship </a> 
+    >Quantium Virtual Internship Notes</a> 
 </h2>
  
 
@@ -111,9 +184,13 @@ ga('send', 'pageview');
     
     <div class="article-meta">
       <a href="/2020/07/13/uantium-Virtual-Internship/" class="article-date">
-  <time datetime="2020-07-14T02:15:47.000Z" itemprop="datePublished">2020-07-13</time>
+  <time datetime="2020-07-14T02:15:00.000Z" itemprop="datePublished">2020-07-13</time>
 </a>
       
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Virtual-Intership/">Virtual Intership</a>
+  </div>
+
       
       
       
@@ -133,40 +210,9 @@ ga('send', 'pageview');
 </blockquote>
 <h3 id="Task-1-–-Data-preparation-and-customer-analytics"><a href="#Task-1-–-Data-preparation-and-customer-analytics" class="headerlink" title="Task 1 – Data preparation and customer analytics"></a>Task 1 – Data preparation and customer analytics</h3><h4 id="Background"><a href="#Background" class="headerlink" title="Background:"></a>Background:</h4><p>You are part of Quantium’s retail analytics team and have been approached by your client, the Category Manager for Chips, who wants to better understand the types of customers who purchase Chips and their purchasing behaviour within the region.<br>The insights from your analysis will feed into the supermarket’s strategic plan for the chip category in the next half year.</p>
 <h4 id="End-Goal"><a href="#End-Goal" class="headerlink" title="End Goal:"></a>End Goal:</h4><p>To form a strategy based on the findings to provide a clear recommendation to Category Manager so make sure your insights can have a commercial application.</p>
-<h4 id="Early-Exploratory-analysis"><a href="#Early-Exploratory-analysis" class="headerlink" title="Early Exploratory analysis"></a>Early Exploratory analysis</h4><ul>
-<li>Examine transaction data </li>
-<li>Examine customer data</li>
-<li>Data analysis and customer segments</li>
-<li>Deep dive into customer segments</li>
-<li>Derive extra features (pack size and brand name)and define metrics of interest to enable you to draw insights on who spends on chips and what drives spends for each customer segment</li>
-</ul>
-<h4 id="Data-Cleaning-and-Fixing"><a href="#Data-Cleaning-and-Fixing" class="headerlink" title="Data Cleaning and Fixing"></a>Data Cleaning and Fixing</h4><p><strong>Step 1: Basic Checking and Editing by Excel</strong></p>
-<ul>
-<li><p>View the data in Excel and apply <strong>Filter</strong> to check the missing values in each columns – <strong>No missing values in the dataset</strong>.</p>
-</li>
-<li><p>Use <strong>short date format</strong> to change date columns to normal date expression. However, there are some outliers in the dataset,the card number 226000 only have two transactions in the whole dataset, so I decide to remove them.</p>
-</li>
-<li><p>By observing the product names using Filter, I find some similar names such as WW - Woolworths,CCs - Cheezels Cheese,Infzns - Infzions, NCC-Natural Chip - Natural Chip Company, RRD - Red Rock Deli, Smith - Smiths, Snbts- Sunbites, GrnWves - Grain Waves, which I decide to fix using Python for simplicity.</p>
-</li>
-<li><p>Load the data in Python for futher checking and operation.</p>
-</li>
-</ul>
-<p><strong>Step 2: Data Manipulation by Python</strong></p>
-<ol>
-<li>Loda the Transaction Data as <strong>Tdata</strong>, Load the purchase data as <strong>Pdata</strong> and try to merge two data as one,since Transaction Data and Purchase data share the same membership card column</li>
-</ol>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Tdata=pd.read_excel(<span class="string">r'C:\Users\Administrator\Desktop\QVI_transaction_data.xlsx'</span>)</span><br><span class="line">Pdata=pd.read_csv(<span class="string">r'C:\Users\Administrator\Desktop\QVI_purchase_behaviour.csv'</span>)</span><br><span class="line">data=Tdata.merge(Pdata,on= <span class="string">'LYLTY_CARD_NBR'</span>)</span><br><span class="line">data.info() <span class="comment"># By checking the info of data, we didn't find any strange in the dataset.</span></span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>Because we are focusing on chip category , we only want to keep the chip products. So let’s create a new dataframe for chip prodcut.</li>
-</ol>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Use str.contains to find the product name that contain the 'chip'. And Create a new dataframe for chips only.</span></span><br><span class="line">chipdata=data[data[<span class="string">'PROD_NAME'</span>].str.contains(<span class="string">'chip'</span>,<span class="keyword">case</span>=<span class="keyword">False</span>)] <span class="comment"># Case sensitive = False</span></span><br><span class="line">chipdata.reset_index(drop=<span class="keyword">True</span>,inplace=<span class="keyword">True</span>) <span class="comment"># If you don't want it saved as a column then drop = True, inplace= True(reassign the index)</span></span><br><span class="line"><span class="keyword">print</span>(chipdata.head())</span><br><span class="line">chipdata.duplicated().any()<span class="comment"># check duplicated data</span></span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li>Fix the product names to make product name consistent</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Clean all the special character in the product name</span></span><br><span class="line">chipdata[<span class="string">'PROD_NAME'</span>] = chipdata[<span class="string">'PROD_NAME'</span>].str.replace(<span class="string">'\W'</span>, <span class="string">''</span>)</span><br><span class="line"><span class="comment"># Regular expression is the key point to understand the formula</span></span><br><span class="line"><span class="comment"># Replace all the name to standard format</span></span><br><span class="line">chipdata[<span class="string">'PROD_NAME'</span>]=chipdata[<span class="string">'PROD_NAME'</span>].replace(&#123;<span class="string">'WW'</span>: <span class="string">'Woolworths'</span>,<span class="string">'CCs'</span>:<span class="string">'Cheezels Cheese'</span>,<span class="string">'Infzns'</span>:<span class="string">'Infzions'</span>,<span class="string">'Natural Chip Co'</span>: <span class="string">'Natural Chip Company'</span>,<span class="string">'NCC'</span>:<span class="string">'Natural Chip Company'</span>,<span class="string">'RRD'</span> :<span class="string">'Red Rock Deli'</span>, <span class="string">'Smith'</span>:<span class="string">'Smiths'</span>,<span class="string">'Snbts'</span>:<span class="string">'Sunbites'</span>,<span class="string">'GrnWves'</span>:<span class="string">'Grain Waves'</span>&#125;,regex=<span class="literal">True</span>)</span><br><span class="line"><span class="comment"># check to see what product name we have </span></span><br><span class="line">chipdata[<span class="string">'PROD_NAME'</span>].unique()</span><br><span class="line"><span class="comment"># From the result we can see that we have some problem on Smithss</span></span><br><span class="line">chipdata[<span class="string">'PROD_NAME'</span>]=chipdata[<span class="string">'PROD_NAME'</span>].replace(&#123;<span class="string">'Smithsss'</span>:<span class="string">'Smiths'</span>&#125;,regex=<span class="literal">True</span>)</span><br><span class="line">chipdata[<span class="string">'PROD_NAME'</span>].unique()<span class="comment"># now it appears normall</span></span><br></pre></td></tr></table></figure>
-<p>Now the data is good for customer analysis.For simplicity, we can load the data into Tableau for visualization analysis</p>
-<h3 id="Customer-Analysis"><a href="#Customer-Analysis" class="headerlink" title="Customer Analysis"></a>Customer Analysis</h3><p>**Lets figure out several questions that may help us understand the customer behavior:</p>
-
+      
+      <a class="article-more-link" href="/2020/07/13/uantium-Virtual-Internship/">Read More...</a>
+      
       
       <!-- reward -->
       
@@ -178,6 +224,8 @@ ga('send', 'pageview');
     <footer class="article-footer">
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Project-Notes/" rel="tag">Project Notes</a></li></ul>
+
 
     </footer>
 
@@ -780,88 +828,6 @@ ga('send', 'pageview');
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Big-Data/" rel="tag">Big Data</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Coursera/" rel="tag">Coursera</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/UC-San-Diego/" rel="tag">UC San Diego</a></li></ul>
-
-
-    </footer>
-
-  </div>
-
-  
-
-  
-  
-  
-
-  
-
-</article>
-    
-    <article id="post-My-second-post-to-test" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/06/04/My-second-post-to-test/"
-    >HackerRank 30-days Python</a> 
-</h2>
- 
-
-    </header>
-    
-
-    
-    <div class="article-meta">
-      <a href="/2020/06/04/My-second-post-to-test/" class="article-date">
-  <time datetime="2020-06-04T07:24:00.000Z" itemprop="datePublished">2020-06-04</time>
-</a>
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/HackerRank/">HackerRank</a>
-  </div>
-
-      
-      
-      
-    </div>
-    
-
-    
-
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      <blockquote>
-<p>This post only records the problems I made mistakes.</p>
-</blockquote>
-<h4 id="Intro-to-Conditional-Statements"><a href="#Intro-to-Conditional-Statements" class="headerlink" title="Intro to Conditional Statements"></a>Intro to Conditional Statements</h4><p><strong>Task:</strong> Given an integer,n, perform the following conditional actions:</p>
-<ul>
-<li>If  is odd, print Weird</li>
-<li>If  is even and in the inclusive range of  to , print Not Weird</li>
-<li>If  is even and in the inclusive range of  to , print Weird</li>
-<li>If  is even and greater than , print Not Weird</li>
-</ul>
-<p>Complete the stub code provided in your editor to print whether or not is weird.</p>
-      
-      <a class="article-more-link" href="/2020/06/04/My-second-post-to-test/">Read More...</a>
-      
-      
-      <!-- reward -->
-      
-    </div>
-    
-    
-      <!-- copyright -->
-      
-    <footer class="article-footer">
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/30-Days-Python/" rel="tag">30 Days Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HackerRank/" rel="tag">HackerRank</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li></ul>
 
 
     </footer>
