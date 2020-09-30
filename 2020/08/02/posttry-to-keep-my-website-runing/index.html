@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    KPMG Vitrual Internship Notes |  Welcome To My Journey
+    Targeted Customer Evaluation  |  Welcome To My Journey
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -66,7 +66,7 @@ ga('send', 'pageview');
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  KPMG Vitrual Internship Notes
+  Targeted Customer Evaluation 
 </h1>
  
 
@@ -80,7 +80,7 @@ ga('send', 'pageview');
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Vitrual-Internship-Notes/">Vitrual Internship Notes</a>
+    <a class="article-category-link" href="/categories/Internship-Work-Notes/">Internship Work Notes</a>
   </div>
 
       
@@ -90,7 +90,7 @@ ga('send', 'pageview');
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">925</span>
+            <span class="post-count">923</span>
         </span>
     </span>
 
@@ -137,7 +137,7 @@ ga('send', 'pageview');
 <li><strong>Consistency</strong>：The data should be the same as input in other columns.<strong>Example</strong>: <em>If a student name:’Peter Pan’ is in the class name-list, then ‘Peter Pan’in the school name-list should be the same as class name-list.</em> </li>
 </ul>
 <p><a href="https://www.whitepapers.em360tech.com/wp-content/files_mf/1407250286DAMAUKDQDimensionsWhitePaperR37.pdf" target="_blank" rel="noopener">Reference: Defining Data Quality Dimensions</a></p>
-<h4 id="Task-1-Problems-Procedures-and-Notes-Excel-and-Python"><a href="#Task-1-Problems-Procedures-and-Notes-Excel-and-Python" class="headerlink" title="Task 1 Problems,Procedures and Notes (Excel and Python)"></a>Task 1 Problems,Procedures and Notes (Excel and Python)</h4><h5 id="load-the-file-in-Python-and-check-the-sheets-in-file"><a href="#load-the-file-in-Python-and-check-the-sheets-in-file" class="headerlink" title="load the file in Python and check the sheets in file"></a>load the file in Python and check the sheets in file</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># load the necessary libraries</span></span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> xlrd</span><br><span class="line"><span class="keyword">import</span> xlwt</span><br><span class="line"><span class="keyword">import</span> datetime <span class="keyword">as</span> dt</span><br><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> date</span><br><span class="line"><span class="keyword">import</span> seaborn <span class="keyword">as</span> sns</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"><span class="comment"># Read the file and check the sheet names</span></span><br><span class="line">data=pd.ExcelFile(<span class="string">'C:/Users/Administrator/Desktop/KPMG_VI_New_raw_data_update_final.xlsx'</span>)</span><br><span class="line">names=data.sheet_names</span><br><span class="line">names</span><br><span class="line"></span><br><span class="line"><span class="comment"># Check the null values exisit in the sheets to deteremine whether will affect our analysis.</span></span><br><span class="line"><span class="keyword">for</span> name <span class="keyword">in</span> names:</span><br><span class="line">	null=data.parse(name).isnull().sum()</span><br><span class="line">   print(null)</span><br></pre></td></tr></table></figure>
+<h4 id="Problems-Procedures-and-Notes-Excel-and-Python"><a href="#Problems-Procedures-and-Notes-Excel-and-Python" class="headerlink" title="Problems,Procedures and Notes (Excel and Python)"></a>Problems,Procedures and Notes (Excel and Python)</h4><h5 id="load-the-file-in-Python-and-check-the-sheets-in-file"><a href="#load-the-file-in-Python-and-check-the-sheets-in-file" class="headerlink" title="load the file in Python and check the sheets in file"></a>load the file in Python and check the sheets in file</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># load the necessary libraries</span></span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> xlrd</span><br><span class="line"><span class="keyword">import</span> xlwt</span><br><span class="line"><span class="keyword">import</span> datetime <span class="keyword">as</span> dt</span><br><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> date</span><br><span class="line"><span class="keyword">import</span> seaborn <span class="keyword">as</span> sns</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"><span class="comment"># Read the file and check the sheet names</span></span><br><span class="line">data=pd.ExcelFile(<span class="string">'C:/Users/Administrator/Desktop/KPMG_VI_New_raw_data_update_final.xlsx'</span>)</span><br><span class="line">names=data.sheet_names</span><br><span class="line">names</span><br><span class="line"></span><br><span class="line"><span class="comment"># Check the null values exisit in the sheets to deteremine whether will affect our analysis.</span></span><br><span class="line"><span class="keyword">for</span> name <span class="keyword">in</span> names:</span><br><span class="line">	null=data.parse(name).isnull().sum()</span><br><span class="line">   print(null)</span><br></pre></td></tr></table></figure>
 <ol>
 <li>After I observe through the summary of null values, I found the missing values have little impact on our dataset because we want to foucs on the customer that have the relativly big purchase power, we only need to make sure that the customer ID and list price are not null.</li>
 <li>And I also find four unnamed columns. By checking the function, lets define those columns. Unnamed 1: Random number between 40-110 Unnamed 2: If customer has car, then use random number times 1.25, otherwise times 1. Unnamed 3: If the property valuation bigger than 8 or past 3 years bike related purchases bigger than 80, then use number from Unnamed 2 times 1.25, otherwise times 1. Unnamed 4: If customer was considered as mass customer then use number from Unnamed 3 times 0.85, otherwise times 1.</li>
@@ -217,10 +217,19 @@ ga('send', 'pageview');
   
   <nav class="article-nav">
     
+      <a href="/2020/09/01/rost-Sullivan-Virtual-Internship/" class="article-nav-link">
+        <strong class="article-nav-caption">Previous</strong>
+        <div class="article-nav-title">
+          
+            Frost Sullivan Virtual Internship（行研实习）
+          
+        </div>
+      </a>
+    
     
       <a href="/2020/07/13/uantium-Virtual-Internship/" class="article-nav-link">
         <strong class="article-nav-caption">Next</strong>
-        <div class="article-nav-title">Quantium Virtual Internship Notes</div>
+        <div class="article-nav-title">Store Memebers Behavior Analysis</div>
       </a>
     
   </nav>

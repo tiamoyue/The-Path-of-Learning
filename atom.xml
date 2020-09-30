@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tiamoyue.github.io/"/>
-  <updated>2020-08-19T23:17:25.004Z</updated>
+  <updated>2020-09-30T22:40:28.567Z</updated>
   <id>https://tiamoyue.github.io/</id>
   
   <author>
@@ -17,11 +17,80 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>KPMG Vitrual Internship Notes</title>
+    <title>Boston Consulting Group Virtual Internship</title>
+    <link href="https://tiamoyue.github.io/2020/09/30/ston-Consulting-Group-Virtual-Internship/"/>
+    <id>https://tiamoyue.github.io/2020/09/30/ston-Consulting-Group-Virtual-Internship/</id>
+    <published>2020-09-30T22:38:00.000Z</published>
+    <updated>2020-09-30T22:40:28.567Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="Virtual Internship" scheme="https://tiamoyue.github.io/categories/Virtual-Internship/"/>
+    
+    
+      <category term="Work Notes" scheme="https://tiamoyue.github.io/tags/Work-Notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Financial Market Concepts Review and Consolidation</title>
+    <link href="https://tiamoyue.github.io/2020/09/16/nancial-Market-Concept-Review/"/>
+    <id>https://tiamoyue.github.io/2020/09/16/nancial-Market-Concept-Review/</id>
+    <published>2020-09-16T18:08:42.000Z</published>
+    <updated>2020-09-28T02:29:05.859Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Week-One&quot;&gt;&lt;a href=&quot;#Week-One&quot; class=&quot;headerlink&quot; title=&quot;Week One&quot;&gt;&lt;/a&gt;Week One&lt;/h3&gt;&lt;h4 id=&quot;VaR-“Value-at-Risk”&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Frost Sullivan Virtual Internship（行研实习）</title>
+    <link href="https://tiamoyue.github.io/2020/09/01/rost-Sullivan-Virtual-Internship/"/>
+    <id>https://tiamoyue.github.io/2020/09/01/rost-Sullivan-Virtual-Internship/</id>
+    <published>2020-09-01T20:08:00.000Z</published>
+    <updated>2020-09-30T21:58:05.020Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;沙利文行研的核心-—-沙利文360°行研&quot;&gt;&lt;a href=&quot;#沙利文行研的核心-—-沙利文360°行研&quot; class=&quot;headerlink&quot; title=&quot;沙利文行研的核心 — 沙利文360°行研&quot;&gt;&lt;/a&gt;沙利文行研的核心 —
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Virtual Internship" scheme="https://tiamoyue.github.io/categories/Virtual-Internship/"/>
+    
+    
+      <category term="Work Notes" scheme="https://tiamoyue.github.io/tags/Work-Notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Targeted Customer Evaluation </title>
     <link href="https://tiamoyue.github.io/2020/08/02/posttry-to-keep-my-website-runing/"/>
     <id>https://tiamoyue.github.io/2020/08/02/posttry-to-keep-my-website-runing/</id>
     <published>2020-08-03T03:16:00.000Z</published>
-    <updated>2020-08-19T23:17:25.004Z</updated>
+    <updated>2020-09-24T16:52:18.279Z</updated>
     
     <summary type="html">
     
@@ -31,7 +100,7 @@
     </summary>
     
     
-      <category term="Vitrual Internship Notes" scheme="https://tiamoyue.github.io/categories/Vitrual-Internship-Notes/"/>
+      <category term="Internship Work Notes" scheme="https://tiamoyue.github.io/categories/Internship-Work-Notes/"/>
     
     
       <category term="Project Notes" scheme="https://tiamoyue.github.io/tags/Project-Notes/"/>
@@ -39,24 +108,21 @@
   </entry>
   
   <entry>
-    <title>Quantium Virtual Internship Notes</title>
+    <title>Store Memebers Behavior Analysis</title>
     <link href="https://tiamoyue.github.io/2020/07/13/uantium-Virtual-Internship/"/>
     <id>https://tiamoyue.github.io/2020/07/13/uantium-Virtual-Internship/</id>
     <published>2020-07-14T02:15:00.000Z</published>
-    <updated>2020-08-19T23:26:02.949Z</updated>
+    <updated>2020-09-30T20:58:05.418Z</updated>
     
     <summary type="html">
     
-      &lt;blockquote&gt;
-&lt;p&gt;We bring expertise in two core domains to make the most of opportunities in the ‘big data world’– Quantium&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;Task-1-–-Data-preparation-and-customer-analytics&quot;&gt;&lt;a href=&quot;#Task-1-–-Data-preparation-and-customer-analytics&quot; class=&quot;headerlink&quot; title=&quot;Task 1 – Data preparation and customer analytics&quot;&gt;&lt;/a&gt;Task 1 – Data preparation and customer analytics&lt;/h3&gt;&lt;h4 id=&quot;Background&quot;&gt;&lt;a href=&quot;#Background&quot; class=&quot;headerlink&quot; title=&quot;Background:&quot;&gt;&lt;/a&gt;Background:&lt;/h4&gt;&lt;p&gt;You are part of Quantium’s retail analytics team and have been approached by your client, the Category Manager for Chips, who wants to better understand the types of customers who purchase Chips and their purchasing behaviour within the region.&lt;br&gt;The insights from your analysis will feed into the supermarket’s strategic plan for the chip category in the next half year.&lt;/p&gt;
-&lt;h4 id=&quot;End-Goal&quot;&gt;&lt;a href=&quot;#End-Goal&quot; class=&quot;headerlink&quot; title=&quot;End Goal:&quot;&gt;&lt;/a&gt;End Goal:&lt;/h4&gt;&lt;p&gt;To form a strategy based on the findings to provide a clear recommendation to Category Manager so make sure your insights can have a commercial application.&lt;/p&gt;
+      &lt;h3 id=&quot;Task-1-–-Data-preparation-and-customer-analytics&quot;&gt;&lt;a href=&quot;#Task-1-–-Data-preparation-and-customer-analytics&quot; class=&quot;headerlink&quot; title=&quot;Task 1 – Data preparation and customer analytics&quot;&gt;&lt;/a&gt;Task 1 – Data preparation and customer analytics&lt;/h3&gt;&lt;h4 id=&quot;Background&quot;&gt;&lt;a href=&quot;#Background&quot; class=&quot;headerlink&quot; title=&quot;Background:&quot;&gt;&lt;/a&gt;Background:&lt;/h4&gt;&lt;p&gt;The Category Manager for Chips, who wants to better understand the types of customers who purchase Chips and their purchasing behaviour within the region.&lt;br&gt;The insights from analysis will feed into the supermarket’s strategic plan for the chip category in the next half year.&lt;/p&gt;
+&lt;h4 id=&quot;End-Goal&quot;&gt;&lt;a href=&quot;#End-Goal&quot; class=&quot;headerlink&quot; title=&quot;End Goal:&quot;&gt;&lt;/a&gt;End Goal:&lt;/h4&gt;&lt;p&gt;To form a strategy based on the findings to provide a clear recommendation to Category Manager so make sure the insights can have a commercial application.&lt;/p&gt;
     
     </summary>
     
     
-      <category term="Virtual Intership" scheme="https://tiamoyue.github.io/categories/Virtual-Intership/"/>
+      <category term="Intership Work Notes" scheme="https://tiamoyue.github.io/categories/Intership-Work-Notes/"/>
     
     
       <category term="Project Notes" scheme="https://tiamoyue.github.io/tags/Project-Notes/"/>
@@ -164,9 +230,9 @@
       <category term="Leetcode" scheme="https://tiamoyue.github.io/categories/Leetcode/"/>
     
     
-      <category term="Python" scheme="https://tiamoyue.github.io/tags/Python/"/>
-    
       <category term="Code" scheme="https://tiamoyue.github.io/tags/Code/"/>
+    
+      <category term="Python" scheme="https://tiamoyue.github.io/tags/Python/"/>
     
   </entry>
   
@@ -197,9 +263,9 @@
       <category term="HackerRank" scheme="https://tiamoyue.github.io/categories/HackerRank/"/>
     
     
-      <category term="Python" scheme="https://tiamoyue.github.io/tags/Python/"/>
-    
       <category term="Code" scheme="https://tiamoyue.github.io/tags/Code/"/>
+    
+      <category term="Python" scheme="https://tiamoyue.github.io/tags/Python/"/>
     
   </entry>
   
