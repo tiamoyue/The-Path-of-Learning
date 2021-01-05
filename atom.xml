@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tiamoyue.github.io/"/>
-  <updated>2020-10-05T22:11:15.155Z</updated>
+  <updated>2021-01-05T19:30:09.039Z</updated>
   <id>https://tiamoyue.github.io/</id>
   
   <author>
@@ -21,17 +21,30 @@
     <link href="https://tiamoyue.github.io/2020/09/16/nancial-Market-Concept-Review/"/>
     <id>https://tiamoyue.github.io/2020/09/16/nancial-Market-Concept-Review/</id>
     <published>2020-09-16T18:08:00.000Z</published>
-    <updated>2020-10-05T22:11:15.155Z</updated>
+    <updated>2021-01-05T19:30:09.039Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h3 id=&quot;Week-One&quot;&gt;&lt;a href=&quot;#Week-One&quot; class=&quot;headerlink&quot; title=&quot;Week One&quot;&gt;&lt;/a&gt;Week One&lt;/h3&gt;&lt;h4 id=&quot;VaR-“Value-at-Risk”&quot;&gt;&lt;a
-        
-      
+      &lt;h3 id=&quot;Week-One&quot;&gt;&lt;a href=&quot;#Week-One&quot; class=&quot;headerlink&quot; title=&quot;Week One&quot;&gt;&lt;/a&gt;Week One&lt;/h3&gt;&lt;h4 id=&quot;VaR-“Value-at-Risk”&quot;&gt;&lt;a href=&quot;#VaR-“Value-at-Risk”&quot; class=&quot;headerlink&quot; title=&quot;VaR - “Value at Risk”&quot;&gt;&lt;/a&gt;&lt;strong&gt;VaR - “Value at Risk”&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Lets’s say 1%, one-year value at risk of 10 million, it means that there is a 1% chance that the portfolio will lose 10 million in one year.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;Cauchy-Distribution&quot;&gt;&lt;a href=&quot;#Cauchy-Distribution&quot; class=&quot;headerlink&quot; title=&quot;Cauchy Distribution&quot;&gt;&lt;/a&gt;Cauchy Distribution&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;dfdf&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;Central-Limit-Theorem&quot;&gt;&lt;a href=&quot;#Central-Limit-Theorem&quot; class=&quot;headerlink&quot; title=&quot;Central Limit Theorem&quot;&gt;&lt;/a&gt;Central Limit Theorem&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Average of a large amount of independent identically distributed stocks are approximately normally distributed&lt;/li&gt;
+&lt;li&gt;Can fail if the underlying stocks are fat tailed&lt;/li&gt;
+&lt;li&gt;Can fail if the underlying stocks lose their independence&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;Covariance&quot;&gt;&lt;a href=&quot;#Covariance&quot; class=&quot;headerlink&quot; title=&quot;Covariance&quot;&gt;&lt;/a&gt;Covariance&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Covariance between two investments or more is the central to Captial Asset Pricing Model, because you always want to ask for a low covariance.&lt;/li&gt;
+&lt;li&gt;Risk is determined by the covariance.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;Captial-Asset-Pricing-Model-CAPM&quot;&gt;&lt;a href=&quot;#Captial-Asset-Pricing-Model-CAPM&quot; class=&quot;headerlink&quot; title=&quot;Captial Asset Pricing Model (CAPM)&quot;&gt;&lt;/a&gt;Captial Asset Pricing Model (CAPM)&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Based on Rational market and rational investors&lt;/li&gt;
+&lt;li&gt;The CAPM implies that the expected return on the $i_(th)$ asset is determined from its &lt;strong&gt;Beta(𝛽)&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beta(𝛽)&lt;/strong&gt; is the regression slope coefficient when the return on the $i_(th)$ asset is regressed on the return on the market&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -44,11 +57,11 @@
   </entry>
   
   <entry>
-    <title>Frost Sullivan Virtual Internship First Week（行研实习）</title>
+    <title>Frost Sullivan Virtual Internship Notes</title>
     <link href="https://tiamoyue.github.io/2020/09/01/rost-Sullivan-Virtual-Internship/"/>
     <id>https://tiamoyue.github.io/2020/09/01/rost-Sullivan-Virtual-Internship/</id>
     <published>2020-09-01T20:08:00.000Z</published>
-    <updated>2020-10-01T19:51:52.679Z</updated>
+    <updated>2020-11-17T21:16:40.572Z</updated>
     
     <summary type="html">
     
@@ -92,7 +105,7 @@
       <category term="Virtual Internship" scheme="https://tiamoyue.github.io/categories/Virtual-Internship/"/>
     
     
-      <category term="Work Notes" scheme="https://tiamoyue.github.io/tags/Work-Notes/"/>
+      <category term="Internship Notes" scheme="https://tiamoyue.github.io/tags/Internship-Notes/"/>
     
   </entry>
   
@@ -101,11 +114,11 @@
     <link href="https://tiamoyue.github.io/2020/08/02/posttry-to-keep-my-website-runing/"/>
     <id>https://tiamoyue.github.io/2020/08/02/posttry-to-keep-my-website-runing/</id>
     <published>2020-08-03T03:16:00.000Z</published>
-    <updated>2020-09-24T16:52:18.279Z</updated>
+    <updated>2020-12-23T22:59:45.410Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;Task-1-Identifying-the-data-quality-issues-and-how-this-may-impact-our-analysis-going-forward&quot;&gt;&lt;a href=&quot;#Task-1-Identifying-the-data-quality-issues-and-how-this-may-impact-our-analysis-going-forward&quot; class=&quot;headerlink&quot; title=&quot;Task 1: Identifying the data quality issues and how this may impact our analysis going forward?&quot;&gt;&lt;/a&gt;Task 1: Identifying the data quality issues and how this may impact our analysis going forward?&lt;/h3&gt;&lt;p&gt;Since the company didn’t define its own business definition for data quality evaluation, I will follow the general process.&lt;/p&gt;
+      &lt;h3 id=&quot;1-Identifying-the-data-quality-issues-and-how-this-may-impact-our-analysis-going-forward&quot;&gt;&lt;a href=&quot;#1-Identifying-the-data-quality-issues-and-how-this-may-impact-our-analysis-going-forward&quot; class=&quot;headerlink&quot; title=&quot;1.Identifying the data quality issues and how this may impact our analysis going forward?&quot;&gt;&lt;/a&gt;1.Identifying the data quality issues and how this may impact our analysis going forward?&lt;/h3&gt;&lt;p&gt;Since the company didn’t define its own business definition for data quality evaluation, I will follow the general process.&lt;/p&gt;
 &lt;p&gt;To evaluate the quality of data, we can follow the Six Standard Data Quality Dimension: &lt;/p&gt;
     
     </summary>
@@ -114,7 +127,7 @@
       <category term="Internship Work Notes" scheme="https://tiamoyue.github.io/categories/Internship-Work-Notes/"/>
     
     
-      <category term="Project Notes" scheme="https://tiamoyue.github.io/tags/Project-Notes/"/>
+      <category term="Data Analysis Work Notes" scheme="https://tiamoyue.github.io/tags/Data-Analysis-Work-Notes/"/>
     
   </entry>
   
@@ -123,12 +136,12 @@
     <link href="https://tiamoyue.github.io/2020/07/13/uantium-Virtual-Internship/"/>
     <id>https://tiamoyue.github.io/2020/07/13/uantium-Virtual-Internship/</id>
     <published>2020-07-14T02:15:00.000Z</published>
-    <updated>2020-10-01T00:23:33.775Z</updated>
+    <updated>2020-12-23T23:02:29.498Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;Task-1-–-Data-preparation-and-customer-analytics&quot;&gt;&lt;a href=&quot;#Task-1-–-Data-preparation-and-customer-analytics&quot; class=&quot;headerlink&quot; title=&quot;Task 1 – Data preparation and customer analytics&quot;&gt;&lt;/a&gt;Task 1 – Data preparation and customer analytics&lt;/h3&gt;&lt;h4 id=&quot;Background&quot;&gt;&lt;a href=&quot;#Background&quot; class=&quot;headerlink&quot; title=&quot;Background:&quot;&gt;&lt;/a&gt;Background:&lt;/h4&gt;&lt;p&gt;The Category Manager for Chips, who wants to better understand the types of customers who purchase Chips and their purchasing behaviour within the region.&lt;br&gt;The insights from analysis will feed into the supermarket’s strategic plan for the chip category in the next half year.&lt;/p&gt;
-&lt;h4 id=&quot;End-Goal&quot;&gt;&lt;a href=&quot;#End-Goal&quot; class=&quot;headerlink&quot; title=&quot;End Goal:&quot;&gt;&lt;/a&gt;End Goal:&lt;/h4&gt;&lt;p&gt;To form a strategy based on the findings to provide a clear recommendation to Category Manager so make sure the insights can have a commercial application.&lt;/p&gt;
+      &lt;h3 id=&quot;1-Data-preparation-and-customer-analytics&quot;&gt;&lt;a href=&quot;#1-Data-preparation-and-customer-analytics&quot; class=&quot;headerlink&quot; title=&quot;1. Data preparation and customer analytics&quot;&gt;&lt;/a&gt;1. Data preparation and customer analytics&lt;/h3&gt;&lt;h4 id=&quot;Background&quot;&gt;&lt;a href=&quot;#Background&quot; class=&quot;headerlink&quot; title=&quot;Background:&quot;&gt;&lt;/a&gt;Background:&lt;/h4&gt;&lt;p&gt;The Manager wants to better understand the types of customers who purchase Chips and their purchasing behaviour within the region.&lt;br&gt;The insights from analysis will feed into the supermarket’s strategic plan for the chip category in the next half year.&lt;/p&gt;
+&lt;h4 id=&quot;End-Goal&quot;&gt;&lt;a href=&quot;#End-Goal&quot; class=&quot;headerlink&quot; title=&quot;End Goal:&quot;&gt;&lt;/a&gt;End Goal:&lt;/h4&gt;&lt;p&gt;To form a strategy based on the findings to provide a clear recommendation to Manager so make sure the insights can have a commercial application.&lt;/p&gt;
     
     </summary>
     
@@ -136,7 +149,7 @@
       <category term="Internship Work Notes" scheme="https://tiamoyue.github.io/categories/Internship-Work-Notes/"/>
     
     
-      <category term="Work Notes" scheme="https://tiamoyue.github.io/tags/Work-Notes/"/>
+      <category term="Data Analysis Work Notes" scheme="https://tiamoyue.github.io/tags/Data-Analysis-Work-Notes/"/>
     
   </entry>
   
@@ -227,7 +240,7 @@
     <link href="https://tiamoyue.github.io/2020/06/29/y-First-Data-Visulization/"/>
     <id>https://tiamoyue.github.io/2020/06/29/y-First-Data-Visulization/</id>
     <published>2020-06-29T20:55:00.000Z</published>
-    <updated>2020-11-05T21:02:47.447Z</updated>
+    <updated>2020-12-23T23:03:14.134Z</updated>
     
     <summary type="html">
     
@@ -243,8 +256,6 @@
     
     
       <category term="Tableau" scheme="https://tiamoyue.github.io/tags/Tableau/"/>
-    
-      <category term="Data analysis" scheme="https://tiamoyue.github.io/tags/Data-analysis/"/>
     
   </entry>
   
